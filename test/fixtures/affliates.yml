@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  domain: MyString
+  referral: MyString
+  count: 1
+  totalvisit: 1
+
+two:
+  domain: MyString
+  referral: MyString
+  count: 1
+  totalvisit: 1
