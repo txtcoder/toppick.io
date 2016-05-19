@@ -1,3 +1,7 @@
+production:
+  clients:
+    default:
+      uri: <%= ENV['MLAB_DB'] %>
 development:
   # Configure available database clients. (required)
   clients:
