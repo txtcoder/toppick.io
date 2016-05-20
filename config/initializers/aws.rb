@@ -1,5 +1,5 @@
 Aws.config.update({
-  region: 'us-west-2',
+  region: 'website-us-west-2',
   credentials: Aws::Credentials.new(ENV['AWS_ACCESS_KEY'], ENV['AWS_SECRET_KEY']),
 })
 
