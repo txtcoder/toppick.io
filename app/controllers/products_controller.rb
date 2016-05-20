@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
   # GET /products
   # GET /products.json
   def index
@@ -69,6 +69,10 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :url, :domain, :price)
+      params.require(:product).permit(:name, :description, :url, :domain, :price :images)
+    end
+    
+    def set_s3_direct_post
+        @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
     end
 end

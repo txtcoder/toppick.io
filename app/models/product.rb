@@ -4,6 +4,7 @@ class Product
   field :description, type: String
   field :url, type: String
   field :domain, type: String
+  field :images, type: String
   field :price, type: String
   field :country, type: String
   field :display, type: Integer
