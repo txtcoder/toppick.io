@@ -16,6 +16,7 @@
 //= require_tree .
 //= require jquery.ui.widget
 //= require z.jquery.fileupload
+
 $(function() {
   $('.directUpload').find("input:file").each(function(i, elem) {
     var fileInput    = $(elem);
