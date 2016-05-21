@@ -1,3 +1,5 @@
+<%= javascript_include_tag "zz.uploader" %>
+
 <%= form_for(@product, html: { class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
