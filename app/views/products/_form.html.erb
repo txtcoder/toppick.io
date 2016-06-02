@@ -26,16 +26,16 @@
     <%= f.text_field :url %>
   </div>
   <div class="field">
-    <%= f.label :domain %><br>
-    <%= f.text_field :domain %>
-  </div>
-  <div class="field">
     <%= f.label :images %><br>
     <%= f.file_field :images %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
     <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.select :country, [['USA','USA'],['Canada','Canada'],['Test','Test']] %>
   </div>
   <div class="actions">
     <%= f.submit %>
