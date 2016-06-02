@@ -16,6 +16,6 @@ class Product
   validates :url, presence: true, :url => true
   validates :domain, presence: true, :url => true
   validates :images, :url => true
-  validates :price, :presence: true
-  #validates :country, :presence: true, inclusion: { in: %w(USA Canada Test), message: "%{value} is not a supported country" }
+  validates :price, presence: true
+  validates :country, presence: true, inclusion: { in: %w(USA Canada Test), message: "%{value} is not a supported country" }
 end
