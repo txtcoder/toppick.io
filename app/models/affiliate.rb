@@ -1,4 +1,4 @@
-class Affliate
+class Affiliate
   include Mongoid::Document
   field :domain, type: String
   field :referral, type: String
