@@ -130,10 +130,5 @@ development:
 test:
   clients:
     default:
-      database: toppicks_test
-      hosts:
-        - localhost:27017
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
+      uri: <%= ENV['MLAB_DB'] %>
+
