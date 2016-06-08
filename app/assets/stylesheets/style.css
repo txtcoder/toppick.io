@@ -1043,14 +1043,8 @@ blockquote {
 }
 
 #catalogue .thumbnail .caption-img{
-	width: 100%;
+	width: auto;
 	height: 130px;
-	-o-background-size: contain !important;
-	-moz-background-size: contain !important;
-	-webkit-background-size: contain !important;
-	-ms-background-size: contain !important;
-	background-size: contain !important;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/product_img.jpg)no-repeat center center;
 	-o-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
