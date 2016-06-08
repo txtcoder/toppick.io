@@ -104,15 +104,17 @@
       </div>
 
       <div class="row">
+
+        <% @products.each do |product| %>
         <div class="col-md-3 col-sm-4 col-xs-6 small_only">
           <div class="wow animated fadeInDown thumbnail">
             <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
             
             <div class="caption-details">
               <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
+                <li><h3><%= product.name %></h3></li>
+                <li><p><%= product.description %></p></li>
+                <li><p class="product_price">PRICE: $<%= product.price %></p></li>
               </ul>
               </div>
 
@@ -123,215 +125,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
-          <div class="wow animated fadeInDown thumbnail">
-            <div class="caption-img"></div><!-- The image placement is located in the style css, background -->
-            
-            <div class="caption-details">
-              <ul>
-                <li><h3>Border Canary</h3></li>
-                <li><p>Description: DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionD</p></li>
-                <li><p class="product_price">PRICE: $200 CDN</p></li>
-              </ul>
-              </div>
-
-              <div class="view_details">
-                <a href="#" class="price">VIEW DETAIL</a>
-              </div>
-
-          </div>
-        </div>
-
+        <% end %>
       </div>
 
       <ul class="pagination">
