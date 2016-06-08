@@ -13,5 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap.min
 //= require jquery.ui.widget
 //= require z.jquery.fileupload
+//= require respond.min
+//= require script
+//= require html5shiv
+//= require wow.min

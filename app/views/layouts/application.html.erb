@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Toppicks</title>
+  <title>TOP PICKS</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+    <!-- Google Font Orbitron 400,700, 500-->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Google Font Lato 400 -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <ul class="list-inline">
+          <li><h3 class="navbar-brand visible-xs" href="#">TOP PICKS</h3></li>
+          <li><a href="index.html" class="navbar-brand_logo visible-xs"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/logo.jpg"/></a></li>
+        </ul>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav nav-left">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="index.html" class="logo visible-lg visible-md visible-sm"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/logo.jpg" /></a>
+      <div id="brand" class="visible-lg visible-md visible-sm">&nbsp;</div>
+      <ul class="nav navbar-nav nav-right">
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">VIEW ALL</a></li>
+          <li><a href="#">TOP VIEWED</a></li>
+          <li><a href="#">EDITOR'S PICK</a></li>
+          <li><a href="#">NEW TO OLD</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">MEDIA<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">FACEBOOK</a></li>
+          <li><a href="#">TWITTER</a></li>
+          <li><a href="#">RADDIT</a></li>
+          <li class="divider"></li>
+          <li><a href="#">MEDIA KIT</a></li>
+        </ul>
+        </li>
+      </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 <%= yield %>
+
+	
+	<!-- begin:footer -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>FOLLOW US</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus,<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+
+			<ul class="wow fadeInLeftBig list-inline">
+				<li><a href="#"><div id="twitter_icon"></div></a></li>
+				<li><a href="#"><div id="raddit_icon"></div></a></li>
+				<li><a href="#"><div id="facebook_icon"></div></a></li>
+		    </ul>
+
+			<div class="sitemap">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">PRODUCT</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end:footer -->
+	
+	<!-- begin:copyright -->
+	<div id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<small>Copyright &copy; 2016 TOP PICKS All Right Reserved.</small>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:copyright -->
+	<script>
+	 new WOW().init();
+	</script>
 
 </body>
 </html>
