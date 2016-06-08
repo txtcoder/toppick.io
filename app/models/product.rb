@@ -1,5 +1,6 @@
 class Product
   include Mongoid::Document
+  include Mongoid::Timestamps
   before_validation :update_affiliate_link
 
   field :name, type: String
@@ -20,6 +21,9 @@ class Product
   validates :price, presence: true
   validates :country, presence: true, inclusion: { in: %w(USA Canada Test), message: "%{value} is not a supported country" }
 
+  scope :test, -> {where(country: "Test")}
+  scope :USA, -> {where(country: "USA")}
+  scope :Canada, ->{where(country: "Canada")}
 
   def update_affiliate_link
     domain= URI.parse(url).host
