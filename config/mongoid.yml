@@ -1,3 +1,7 @@
+production:
+  clients:
+    default:
+      uri: <%= ENV['MLAB_DB'] %>
 development:
   # Configure available database clients. (required)
   clients:
@@ -5,12 +9,10 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: toppicks_development
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
-      hosts:
-        - localhost:27017
-      options:
+      uri:
+        <%= ENV['MLAB_DB_TEST'] %>
         # Change the default write concern. (default = { w: 1 })
         # write:
         #   w: 1
@@ -128,10 +130,5 @@ development:
 test:
   clients:
     default:
-      database: toppicks_test
-      hosts:
-        - localhost:27017
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
+      uri: <%= ENV['MLAB_DB_TEST'] %>
+
