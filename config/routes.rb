@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :admins
+  get 'login' =>'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   resources :admins
     root 'products#index'
     resources :products
