@@ -31,31 +31,23 @@
               
                 <div class="carousel-inner">
                   <div class="item active">
-                  <img src="img/product_img.jpg">
-                  </div>
-                  <div class="item">
-                  <img src="img/product_img.jpg">
-                  </div>
-                  <div class="item">
-                  <img src="img/product_img.jpg">
+                     <%= image_tag(@product.images) %>
                   </div>
                 </div>
                 
                 <ol class="carousel-indicators">
-                  <li data-target="#itemsingle" data-slide-to="0" class="active"><img src="img/product_img.jpg" class="img-responsive"></li>
-                  <li data-target="#itemsingle" data-slide-to="1" class=""><img src="img/product_img.jpg" class="img-responsive"></li>
-                  <li data-target="#itemsingle" data-slide-to="2" class=""><img src="img/product_img.jpg" class="img-responsive"></li>
+                  <li data-target="#itemsingle" data-slide-to="0" class="active"><%= image_tag(@product.images, :class => "img-responsive") %></li>
                 </ol>
               
               </div>
             </div>
             <div class="col-md-7 col-sm-7 col-xs-7 page_content_xs">
-              <h3>Border Canary</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+              <h3><%= @product.name %></h3>
+              <p><%= @product.description%></p>
               <p>Item Code : <span class="label label-warning">#2120</span></p>
-              <h4 class="product_price">PRICE: $200 CDN</h4>
+              <h4 class="product_price">PRICE: $<%= @product.price %></h4>
 
-              <p><a href="#" class="btn btn-order btn-large"><i class="icon-shopping-cart"></i> Order Now</a></p>
+              <p><a href="<%= @product.url %>" class="btn btn-order btn-large"><i class="icon-shopping-cart"></i>Buy from <%= @product.domain %></a></p>
             </div>
           </div>
 
