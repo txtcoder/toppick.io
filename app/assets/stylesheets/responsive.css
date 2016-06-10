@@ -438,11 +438,14 @@
     .navbar-default .navbar-nav.nav-left {
         text-align: center;
         padding-left: 0;
+         margin-left: 0;
+        margin-right: 0;
     }
 
      .navbar-default .navbar-nav.nav-right {
         text-align: center;
         padding-right: 0;
+        margin-left: 0;
         margin-right: 0;
     }
 
