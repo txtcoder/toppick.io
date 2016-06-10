@@ -165,35 +165,6 @@
         padding: 0px;
         margin:0;
     }
-
-    .navbar .btn-navbar {
-        margin-top: 18px;
-        margin-right: 20px;
-        color: #ffffff;
-        text-shadow: none;
-        background: #FFD600;
-        border-color: transparent transparent transparent;
-        border-color: transparent;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-          box-shadow: none;
-    }
-    
-    .navbar .btn-navbar:hover,
-    .navbar .btn-navbar:focus,
-    .navbar .btn-navbar:active{
-        background: #F1C40F;
-    }
-    
-    .navbar .btn-navbar .icon-bar {
-        background-color: #ffffff;
-        -webkit-border-radius: 1px;
-        -moz-border-radius: 1px;
-        border-radius: 1px;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-    }
   
     .navbar-collapse .dropdown-menu a{
         font-weight: 600;
@@ -518,39 +489,6 @@
     .navbar-default .container{
         width: 100%;
 
-    }
-
-    .navbar .btn-navbar {
-        margin-right: 20px;
-    }
-    
-    .navbar .btn-navbar {
-        margin-top: 18px;
-        margin-right: 20px;
-        color: #ffffff;
-        text-shadow: none;
-        background: #FFD600;
-        border-color: transparent transparent transparent;
-        border-color: transparent;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-          box-shadow: none;
-    }
-    
-    .navbar .btn-navbar:hover,
-    .navbar .btn-navbar:focus,
-    .navbar .btn-navbar:active{
-        background: #F1C40F;
-    }
-    
-    .navbar .btn-navbar .icon-bar {
-        background-color: #ffffff;
-        -webkit-border-radius: 1px;
-        -moz-border-radius: 1px;
-        border-radius: 1px;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
     }
 
     .navbar .nav-left{
