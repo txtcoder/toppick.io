@@ -434,11 +434,12 @@ blockquote {
 .navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle,
 .navbar-default .navbar-nav li.dropdown.active > .dropdown-toggle,
 .navbar-default .navbar-nav li.dropdown.open.active > .dropdown-toggle {
-	color: #ffffff;
-	background-color: #F1C40F;
+	color: #404041;
+	background-color: #f9e62e;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	border:2px solid #404041;
 }
 
 .navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle .caret,
