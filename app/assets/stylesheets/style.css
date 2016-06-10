@@ -399,10 +399,10 @@ blockquote {
 }
 
 .navbar-default .navbar-nav.nav-left {
-	padding-left: 50px;
+	padding-left: 20px;
 }
 .navbar-default .navbar-nav.nav-right {
-	padding-right: 50px;
+	padding-right: 20px;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
