@@ -166,65 +166,6 @@
         margin:0;
     }
   
-    .navbar-collapse .dropdown-menu a{
-        font-weight: 600;
-    }
-    
-    .navbar-collapse .dropdown-menu a:hover {
-        font-weight: 600;
-        background: #f9e62e;
-        color: #404041;
-    }
-
-    .navbar-collapse .dropdown-menu .sub-menu {
-        position: static;
-        top: auto;
-        left: auto;
-        display: none;
-        float: none;
-        max-width: none;
-        padding: 0;
-        margin: 0 15px;
-        background-color: transparent;
-        border: none;
-        -webkit-border-radius: 0;
-           -moz-border-radius: 0;
-                border-radius: 0;
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
-    }
-
-    .navbar-collapse .dropdown-menu li .sub-menu {
-        visibility: visible;
-        display: block;
-    }
-
-    .navbar-collapse .dropdown-menu .sub-menu:before {
-        display: none;
-    }
-
-    .navbar-collapse .dropdown-menu .sub-menu:after {
-       display: none;
-    }
-    
-    .blog .the-calendar:before{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border: 10px;
-        border-top: 10px solid #f1c40f ;
-        border-bottom: 10px solid transparent ;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-        top: auto;
-        margin-top: 0;
-        left: 50%;
-        bottom: -20px;
-        margin-left: -10px;
-    }
-    
     .navbar .nav-left{
         float: left;
     }
