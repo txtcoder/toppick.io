@@ -369,17 +369,14 @@
         background: none;
         font-weight: 600;
         border:none;
-      
     }
 
     .dropdown-menu > .active > a,
     .dropdown-menu > .active > a:hover,
-    .dropdown-menu > .active > a:focus{
+    .dropdown-menu > .active > a:focus {
         color: #404041;
         text-decoration: none;
         background: #f9e62e;
-        border:2px solid #404041;
-
     }
 
     #home-slider {
@@ -477,6 +474,26 @@
         padding-right: 0;
     }
 
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus{
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        color: #f9e62e;
+        text-decoration: none;
+        background: none;
+        font-weight: 600;
+        border:none;
+    }
+
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > .active > a:focus {
+        color: #404041;
+        text-decoration: none;
+        background: #f9e62e;
+    }
+    
     #home-slider .item {
         height: auto;
         padding: 60px 0px 30px;
