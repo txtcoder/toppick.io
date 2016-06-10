@@ -40,7 +40,9 @@
     #home-slider .carousel-inner {
         height: 550px;
     }
-       #home-slider .carousel-inner .item .carousel-content {
+    
+    #home-slider .carousel-inner .item .carousel-content{
+
         margin-top: 160px;
     }
 
@@ -153,7 +155,7 @@
         margin-top: 20%;
     }
 
-    #home-slider .carousel-inner .item .carousel-content {
+    #home-slider .carousel-inner .item .carousel-content{
         margin-top: 160px;
     }
 
