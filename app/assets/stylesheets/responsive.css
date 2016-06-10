@@ -416,7 +416,7 @@
         padding: 0px;
         margin:0;
     }
-    
+
     .navbar-default .container{
         width: 100%;
 
@@ -547,6 +547,11 @@
         margin:0;
     }
     
+    .navbar-default .container{
+        width: 100%;
+
+    }
+
     .navbar .btn-navbar {
         margin-right: 20px;
     }
