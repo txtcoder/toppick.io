@@ -372,14 +372,17 @@ blockquote {
 
 .navbar-default .nav-left > li:nth-child(5n + 0){
 	display: none;
+
 }
 
 .navbar-default .nav-left{
 	float: left;
+	padding-top: 15px;
 }
 
 .navbar-default .nav-right{
 	float: right;
+	padding-top: 15px;
 }
 
 .navbar-default .navbar-nav > li > a {
