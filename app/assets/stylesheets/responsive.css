@@ -313,7 +313,7 @@
         margin-top: 160px;
         margin-bottom: 40px;
     }
-    
+
     #home-slider .carousel-inner .item .carousel-content h3{
     color: white;
     margin-top: 0px;
@@ -376,18 +376,23 @@
     .navbar-default .navbar-nav.nav-left {
         text-align: center;
         padding-left: 0;
-         margin-left: 0;
+        padding-top: 0;
+        margin-left: 0;
         margin-right: 0;
     }
 
      .navbar-default .navbar-nav.nav-right {
         text-align: center;
         padding-right: 0;
+        padding-top: 0;
         margin-left: 0;
         margin-right: 0;
+
     }
 
-
+    .navbar-default .navbar-nav .extra-space{
+        margin-top: 0;
+    }
     .dropdown-menu > li > a:hover,
     .dropdown-menu > li > a:focus{
         -webkit-border-radius: 0px;
@@ -503,6 +508,11 @@
      .navbar-default .navbar-nav.nav-right {
         text-align: center;
         padding-right: 0;
+        margin-right: 0;
+        padding-top: 0;
+    }
+    .navbar-default .navbar-nav .extra-space{
+        margin-top: 0;
     }
 
     .dropdown-menu > li > a:hover,
