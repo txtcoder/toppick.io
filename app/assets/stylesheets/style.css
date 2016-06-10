@@ -445,8 +445,8 @@ blockquote {
 .navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-default .navbar-nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-default .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
-	border-top-color: #ffffff;
-	border-bottom-color: #ffffff;
+	border-top-color: #404041;
+	border-bottom-color: #404041;
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu{
