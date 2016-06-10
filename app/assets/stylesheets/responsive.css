@@ -40,7 +40,6 @@
     #home-slider .carousel-inner {
         height: 550px;
     }
-    
        #home-slider .carousel-inner .item .carousel-content {
         margin-top: 160px;
     }
@@ -512,6 +511,10 @@
         height: auto;
         padding: 60px 0px 30px;
         min-height: 400px;
+    }
+
+    #home-slider .carousel-inner {
+        height: 400px;
     }
 
     #home-slider .carousel-inner .item .carousel-content h3{
