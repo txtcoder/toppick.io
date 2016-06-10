@@ -24,6 +24,7 @@ class Product
   scope :test, -> {where(country: "Test")}
   scope :USA, -> {where(country: "USA")}
   scope :Canada, ->{where(country: "Canada")}
+  scope :sort_by_new, -> {order_by(:created_at => :desc)}
 
   def update_affiliate_link
     domain= URI.parse(url).host
