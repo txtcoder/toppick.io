@@ -1159,7 +1159,6 @@ blockquote {
 }
 
 #about_us #contact_section .contact_button:hover{
-	background-color: #efc319;
 	font-size: 15px;
 	-o-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
