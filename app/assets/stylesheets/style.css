@@ -476,7 +476,20 @@ blockquote {
 	-o-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
+.dropdown-menu .dropdown_media_icon{
+	width: 15px;
+	height: auto;
+}
 
+.dropdown-menu  > li > a > ul > li{
+ 	padding:0;
+}
+
+.dropdown-menu  > li > a > ul > li > p{
+	margin-bottom: 0;
+	font-family: 'Orbitron', arial, sans-serif;
+
+}
 .dropdown-menu  > li > a{
 	font-weight: 600;
 	color: #404041;
