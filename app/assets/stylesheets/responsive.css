@@ -266,6 +266,10 @@
         border: 1px solid #404041;
     }
 
+      .navbar-default .navbar-nav.nav-right {
+        margin-left: 0;
+    }
+
     .navbar-collapse{
         background: white;
     }
