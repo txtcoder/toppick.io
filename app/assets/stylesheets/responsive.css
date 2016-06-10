@@ -18,12 +18,10 @@
     .navbar-default .navbar-nav.nav-left {
         padding-left: 0;
         margin-right: 0;
-        margin-left: 80px;
     }
     .navbar-default .navbar-nav.nav-right {
         padding-right: 0;
         margin-left: 0;
-        margin-right: 80px;
     }
 
     #home-slider {
