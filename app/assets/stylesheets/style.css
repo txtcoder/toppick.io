@@ -479,10 +479,12 @@ blockquote {
 
 .dropdown-menu  > li > a{
 	font-weight: 600;
-	color: #666666;
+	color: #404041;
 	text-transform: uppercase;
 	font-size: 12px;
 	position: relative;
+	font-family: 'Orbitron', arial, sans-serif;
+
 }
 
 .dropdown-menu  > li.nav-header{
@@ -499,19 +501,21 @@ blockquote {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	color: #ffffff;
+	color: #404041;
 	text-decoration: none;
-	background: #F1C40F;
+	background: #f9e62e;
 	font-weight: 600;
+	border:2px solid #404041;
   
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
+  color: #404041;
   text-decoration: none;
-  background: #F1C40F;
+  background: #f9e62e;
+  border:2px solid #404041;
 }
 
 .dropdown-menu li{
