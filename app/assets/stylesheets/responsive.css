@@ -201,8 +201,8 @@
     
     .navbar-collapse .dropdown-menu a:hover {
         font-weight: 600;
-        background: #eff0f2;
-        color: #2C3E50;
+        background: #f9e62e;
+        color: #404041;
     }
 
     .navbar-collapse .dropdown-menu .sub-menu {
