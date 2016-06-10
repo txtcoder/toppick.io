@@ -722,27 +722,18 @@ blockquote {
 	padding-right: 50px;
 }
 
-#home-slider .carousel-inner .item .carousel-content h2{
-	color: white;
-	margin-top: 0px;
-	font-weight: 700;
-	font-size: 90px;
-	line-height: 95px;
-	text-transform: uppercase;
-	display: block;
-}
-
 #home-slider .carousel-inner .item .carousel-content h3{
 	color: white;
 	margin-top: 0px;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 25px;
 	line-height: 44px;
+	text-transform: uppercase;
 	display: block;
 }
 
 #home-slider .carousel-inner .item .carousel-content p{
-	font-size: 22px;
+	font-size: 15px;
 	color: #ffffff;
 	font-weight: 700;
 }

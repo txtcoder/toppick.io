@@ -313,6 +313,22 @@
         margin-top: 160px;
         margin-bottom: 40px;
     }
+    
+    #home-slider .carousel-inner .item .carousel-content h3{
+    color: white;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    }
+
+    #home-slider .carousel-inner .item .carousel-content p{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 700;
+    }
 
     #home-slider .carousel-control.left,#home-slider .carousel-control.right {
         margin-top: 15%;
@@ -408,7 +424,7 @@
     color: white;
     margin-top: 0px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 20px;
     text-transform: uppercase;
     display: block;
