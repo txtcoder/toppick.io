@@ -20,3 +20,4 @@
 //= require script
 //= require html5shiv
 //= require wow.min
+//= require clamp.min
