@@ -1039,13 +1039,21 @@ blockquote {
 	text-transform: capitalize;
 }
 
-.caption-details .product_description{
-	height:60px;
-	width: 100%;
-	display: inline-block;
-	overflow: hidden;
-	text-overflow: ellipsis;
+
+/* | START | USING CLAMP.JS TO CLIP THE PARAGRAPH */
+.module {
+  width: 100%;
+  margin: 0 0 1em 0;
+  overflow: hidden;
 }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+/* | END | USING CLAMP.JS TO CLIP THE PARAGRAPH */
 
 .caption-details p{
 	font-family: 'Lato', sans-serif;
