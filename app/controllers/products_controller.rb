@@ -3,8 +3,19 @@ class ProductsController < ApplicationController
   before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
   # GET /products
   # GET /products.json
+  #
+  def self.update_display(product_ids)
+    product_ids.each do |id|
+        product = Product.find(id)
+        product.display+=1
+        product.save
+    end
+  end
+
   def index
     @products = Product.sort_by_new
+    product_ids = @products.map{|p| p.id.to_s}
+    ProductsController.delay.update_display(product_ids)
   end
 
   # GET /products/1
