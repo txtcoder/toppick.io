@@ -12,6 +12,12 @@ class ProductsController < ApplicationController
     end
   end
 
+  def self.update_views(id)
+    product= Product.find(id)
+    product.views+=1
+    product.save
+  end
+
   def index
     @products = Product.sort_by_new
     product_ids = @products.map{|p| p.id.to_s}
@@ -21,6 +27,8 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    id = @product.id.to_s
+    ProductsController.delay.update_views(id)
   end
 
   # GET /products/new
