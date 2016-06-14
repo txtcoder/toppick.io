@@ -2,6 +2,7 @@ class Product
   include Mongoid::Document
   include Mongoid::Timestamps
   before_validation :update_affiliate_link
+  before_save :update_ratio
 
   field :name, type: String
   field :description, type: String
@@ -13,6 +14,8 @@ class Product
   field :display, type: Integer, default: 0
   field :views, type: Integer, default: 0
   field :click, type: Integer, default: 0
+  field :d_to_c, type:Float
+  field :d_to_v, type:Float
 
   validates :name, presence: true
   validates :description, presence: true
@@ -25,6 +28,7 @@ class Product
   scope :USA, -> {where(country: "USA")}
   scope :Canada, ->{where(country: "Canada")}
   scope :sort_by_new, -> {order_by(:created_at => :desc)}
+  scope :hot, ->{order_by(:d_to_v => :desc)}
 
   def update_affiliate_link
     domain= URI.parse(url).host
@@ -43,7 +47,11 @@ class Product
         else
             self.url=url+"?"+referral
         end
-    end
-    
+    end    
+  end
+
+  def update_ratio
+     self.d_to_c = self.click/(self.display+1.0)
+     self.d_to_v = self.views/(self.display+1.0)
   end
 end

@@ -25,7 +25,11 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.sort_by_new
+    if params[:sort] && params[:sort]=="new"
+        @products = Product.sort_by_new
+    else
+       @products = Product.hot 
+    end
     product_ids = @products.map{|p| p.id.to_s}
     ProductsController.delay.update_display(product_ids)
   end
