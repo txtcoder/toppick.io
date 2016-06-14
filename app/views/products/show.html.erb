@@ -46,7 +46,11 @@
               <p><%= @product.description%></p>
               <h4 class="product_price">PRICE: $<%= @product.price %></h4>
 
-              <p><a href="<%= @product.url %>" class="btn btn-order btn-large"><i class="icon-shopping-cart"></i>Buy from <%= @product.domain %></a></p>
+              <p>
+<%= link_to  product_path(@product, :external =>"true"), :class => "btn btn-order btn-large"  do %>
+<i class="icon-shopping-cart"></i>Buy from <%= @product.domain %><% end %>
+            
+    </p>
             </div>
           </div>
 

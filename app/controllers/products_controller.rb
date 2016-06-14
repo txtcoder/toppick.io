@@ -18,6 +18,12 @@ class ProductsController < ApplicationController
     product.save
   end
 
+  def self.update_click(id)
+    product= Product.find(id)
+    product.click+=1
+    product.save
+  end
+
   def index
     @products = Product.sort_by_new
     product_ids = @products.map{|p| p.id.to_s}
@@ -27,6 +33,11 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    if params[:external]
+        id=@product.id.to_s
+        ProductsController.delay.update_click(id)
+        redirect_to @product.url
+    end
     id = @product.id.to_s
     ProductsController.delay.update_views(id)
   end
