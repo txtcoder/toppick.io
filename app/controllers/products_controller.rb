@@ -35,6 +35,10 @@ class ProductsController < ApplicationController
     end
     product_ids = @products.map{|p| p.id.to_s}
     ProductsController.delay.update_display(product_ids)
+
+    if params[:partial]
+        render partial: "index", :layout => false
+    end
   end
 
   # GET /products/1

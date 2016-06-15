@@ -2073,10 +2073,10 @@ blockquote {
     background-size: contain;
 }
 
-#footer ul li a #raddit_icon{
+#footer ul li a #reddit_icon{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/raddit_icon.png)no-repeat center center;
+	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/reddit_icon.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -2108,10 +2108,10 @@ blockquote {
 	transition: all 0.3s ease-in-out;
 }
 
-#footer ul li a #raddit_icon:hover{
+#footer ul li a #reddit_icon:hover{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/raddit_icon_hover.png)no-repeat center center;
+	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/reddit_icon_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
