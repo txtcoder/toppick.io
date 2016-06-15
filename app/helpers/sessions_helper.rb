@@ -3,7 +3,7 @@ module SessionsHelper
     session[:admin_id]=admin.id
   end
   def current_user
-    @current_user ||= Admin.find_by(id: session[:admin_id])
+    @current_user ||= Admin.find(session[:admin_id]) if session[:admin_id]
   end
 
   def logged_in?

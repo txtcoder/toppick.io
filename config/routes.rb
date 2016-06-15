@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
-  resources :admins
     root 'products#index'
     resources :products
     resources :affiliates

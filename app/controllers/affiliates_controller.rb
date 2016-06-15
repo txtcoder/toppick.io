@@ -1,5 +1,6 @@
 class AffiliatesController < ApplicationController
   before_action :set_affiliate, only: [:show, :edit, :update, :destroy]
+  before_action :check_admin, only: [:index, :show, :new, :edit, :create, :update, :destroy]
 
   # GET /affiliates
   # GET /affiliates.json
@@ -70,5 +71,12 @@ class AffiliatesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def affiliate_params
       params.require(:affiliate).permit(:domain, :referral)
+    end
+
+    def check_admin
+        unless logged_in?
+        flash[:danger] = "You shouldn't be here"
+        redirect_to root_path
+        end
     end
 end

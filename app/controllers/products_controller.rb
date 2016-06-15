@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
+  before_action :check_admin, only: [:new, :edit, :create, :update, :destroy]
   # GET /products
   # GET /products.json
   #
@@ -27,6 +28,8 @@ class ProductsController < ApplicationController
   def index
     if params[:sort] && params[:sort]=="new"
         @products = Product.sort_by_new
+    elsif params[:sort] && params[:sort]="views"
+        @products = Product.most_viewed
     else
        @products = Product.hot 
     end
@@ -108,5 +111,12 @@ class ProductsController < ApplicationController
     
     def set_s3_direct_post
         @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
+    end
+
+    def check_admin
+        unless logged_in?
+        flash[:danger] = "You shouldn't be here"
+        redirect_to root_path
+        end
     end
 end
