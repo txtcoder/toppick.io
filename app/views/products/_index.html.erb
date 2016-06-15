@@ -1,0 +1,59 @@
+  <!-- begin:catalogue -->
+  <div id="catalogue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading-title">
+            <ul class="list-inline">
+              <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/view_all.png"/></li>
+              <li><h2>VIEW ALL</h2></li>
+            </ul>
+            <p>Great products for everyone who is interested in innovation!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <% @products.each do |product| %>
+        <div class="col-md-3 col-sm-4 col-xs-6 small_only">
+          <div class="wow animated fadeInDown thumbnail">
+            <img src="<%= product.images %>" class="caption-img"/>
+
+            <div class="caption-details">
+              <ul>
+                <li><h3><%= product.name %></h3></li>
+                <li><p class="module line-clamp product_description"><%= product.description %></p></li>
+                <li><p class="product_price">PRICE: $<%= product.price %></p></li>
+              </ul>
+              </div>
+
+              <div class="view_details">
+                <%= link_to 'VIEW DETAIL', product, action: "show", class: "price" %>
+              </div>
+              <% if logged_in? %>
+                <%= link_to 'Edit', edit_product_path(product) %>
+                <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %>
+
+          </div>
+        </div>
+
+        <% end %>
+      </div>
+        <% if logged_in? %>
+        <%= link_to 'New Product', new_product_path %>
+        <% end %>
+      <ul class="pagination">
+                  <li class="disabled"><a href="#">Page 1 of 2</a></li>
+                  <li class="disabled"><a href="#">&laquo;</a></li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">&raquo;</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- end:catalogue -->
+                             
