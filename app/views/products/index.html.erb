@@ -56,28 +56,28 @@
         <ul class="list-inline">
           <li id="product_nav_col">
             <ul>
-              <li><a href="#"><div class="view_all active"></div></a></li>
+              <li><a href="#" onclick="get_hot();return false;"><div class="view_all active"></div></a></li>
               <li><h3>VIEW ALL</h3></li>
             </ul>
           </li>
 
           <li id="product_nav_col">
             <ul>
-              <li><a href="#"><div class="top_viewed"></div></a></li>
+              <li><a href="#" onclick="get_views();return false;"><div class="top_viewed"></div></a></li>
               <li><h3>TOP VIEWED</h3></li>
             </ul>
           </li>
 
           <li id="product_nav_col">
             <ul>
-              <li><a href="#"><div class="editor_pick"></div></a></li>
+              <li><a href="#" onclick="get_editor();return false;"><div class="editor_pick"></div></a></li>
               <li><h3>EDITOR'S PICK</h3></li>
             </ul>
           </li>
 
           <li id="product_nav_col">
             <ul>
-              <li><a href="#"><div class="new_old"></div></a></li>
+              <li><a href ="#" onclick="get_new();return false;"><div class="new_old"></div></a></li>
               <li><h3>NEW TO OLD</h3></li>
             </ul>
           </li>
@@ -87,9 +87,7 @@
     </div>
   </div>
   <!-- end:tagline -->
-  <div class="dynamic_content">
   <%= render "index" %>
-  </div>
 
   <!-- begin:about us-->
   <div id="about_us">

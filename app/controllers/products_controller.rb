@@ -36,7 +36,9 @@ class ProductsController < ApplicationController
     product_ids = @products.map{|p| p.id.to_s}
     ProductsController.delay.update_display(product_ids)
 
+    @partial="hot"
     if params[:partial]
+        @partial=params[:partial] if %w{hot views editor new}.include? params[:partial]
         render partial: "index", :layout => false
     end
   end

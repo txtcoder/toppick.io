@@ -21,3 +21,4 @@
 //= require html5shiv
 //= require wow.min
 //= require clamp.min
+//= require dynamicload

@@ -5,8 +5,19 @@
         <div class="col-md-12">
           <div class="heading-title">
             <ul class="list-inline">
+              <% if @partial=="hot" %>
               <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/view_all.png"/></li>
               <li><h2>VIEW ALL</h2></li>
+              <% elsif @partial=="views" %>
+             <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/top_viewed.png"/></li>
+              <li><h2>TOP VIEWED</h2></li>
+              <% elsif @partial=="editor" %>
+                  <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/editor_pick.png"/></li>
+                  <li><h2>EDITOR PICK</h2></li>
+              <% elsif @partial=="new" %>
+                      <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/new_old.png"/></li>
+                    <li><h2>NEW TO OLD</h2></li>
+              <% end %>
             </ul>
             <p>Great products for everyone who is interested in innovation!</p>
           </div>
