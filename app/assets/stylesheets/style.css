@@ -1186,6 +1186,45 @@ blockquote {
 	transition: all 0.3s ease-in-out;
 }
 
+/* ===========================
+   ====== Contact Form ======= 
+   =========================== */
+.forum-collapse {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f9e62e;
+	width: 100%;
+}
+.contact-form input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 400px;
+	max-width: 400px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+.contact-form textarea {
+	width: 400px;
+	height: 150px;
+	max-width: 400px;
+	line-height: 18px;
+}
+
+.contact-form input:hover, textarea:hover,
+.contact-form input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.contact-form label {
+	margin-left: 10px;
+	color: #999999;
+}
 
 
 /* 
