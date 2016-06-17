@@ -103,13 +103,46 @@
         <li><p>We use the design thinking process to resolve social innovation challenges and bring together relevant stakeholders to develop successful innovative solutions. We offer education to start ups and the community in support of the above activities.</p></li>
       </ul>
 
+      <!-- START: CONTACT BUTTON-->
       <div id="contact_section">
         <ul class="list-inline">
-          <li><a href="#" class="contact_button">CONTACT</a></li>
-          <li><a href="#" class="contact_button">FEEDBACK</a></li>
+          <li><button type="button" class="contact-toggle contact_button" data-toggle="collapse" data-target="#form-collapse-contact">CONTACT</button></li>
+          <li><button type="button" class="contact-toggle contact_button" data-toggle="collapse" data-target="#form-collapse-contact">FEEDBACK</button></li>
         </ul>
       </div>
+      <!-- END:CONTACT BUTTON-->
 
     </div>
+
+    <!-- START:CONTACT TOGGLE STARTS -->
+          <div class="collapse forum-collapse" id="form-collapse-contact">
+              <div class="container">
+                <form class="contact-form">
+                
+                  <ul>
+                    <li class="name">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" placeholder="First Name"/>
+                    </li>
+                    
+                    <li class="email">
+                      <label for="email">Email</label>
+                      <input type="text" name="email" id="email" placeholder="Enter Email"/>
+                    </li>
+
+                    <li class="text">
+                      <label for="message">Message</label>
+                      <textarea name="text" placeholder="Please let us know how we may help you!"/></textarea>
+                    </li>
+                    
+                    <li class="submit">
+                      <input type="submit" value="Send"/>
+                    </li>
+                  </ul>
+
+                </form>
+            </div>
+          </div><!-- END:CONTACT TOGGLE STARTS -->
+
   </div>
   <!-- end:about us -->

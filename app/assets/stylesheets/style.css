@@ -919,7 +919,8 @@ blockquote {
 }
 
 #tagline .product_nav .top_viewed:hover,
-#tagline .product_nav .top_viewed:active{
+#tagline .product_nav .top_viewed:active
+{
 	height: 50px;
 	width: auto;
 	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/top_viewed_hover.png)no-repeat center center;
