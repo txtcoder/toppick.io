@@ -1199,6 +1199,9 @@ blockquote {
 .forum-collapse .contact-form ul{
 	list-style-type: none;
 }
+.forum-collapse .contact-form ul li{
+	padding-top: 5px;
+}
 
 .contact-form input, textarea {
 	padding: 10px;
