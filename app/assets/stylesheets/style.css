@@ -1207,11 +1207,21 @@ blockquote {
 	padding: 10px;
 	border: 2px solid #404041;
 	width: 100%;
-	color: #404041;
 	font-family: 'Orbitron', arial, sans-serif;
 	text-align: center;
+		border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
 
-
+.contact-form input:focus {
+	background-color: #f4e787;
+	color: #404041;
+}
+.contact-form textarea:focus {
+	background-color: #f4e787;
+	color: #404041;
 }
 
 .contact-form textarea {
