@@ -1207,7 +1207,13 @@ blockquote {
 .forum-collapse .container{
 	max-width: 700px;
 	margin: 0 auto;
+	text-align: center;
 }
+
+.forum-collapse p {
+	padding-bottom: 20px;
+}
+
 .forum-collapse .contact-form ul{
 	list-style-type: none;
 	padding-left: 0;
