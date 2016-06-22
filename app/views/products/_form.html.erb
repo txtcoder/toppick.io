@@ -36,7 +36,10 @@
   <div class="field">
     <%= f.label :country %><br>
     <%= f.select :country, [['USA','USA'],['Canada','Canada'],['Test','Test']] %>
-  </div>
+  </div> 
+  <div class="field">
+    <%= f.label :specs %><br>
+    <%= f.text_field :specs  %>
   <div class="actions">
     <%= f.submit %>
   </div>

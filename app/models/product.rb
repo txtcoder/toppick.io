@@ -11,6 +11,7 @@ class Product
   field :images, type: String
   field :price, type: String
   field :country, type: String
+  field :specs, type: String
   field :display, type: Integer, default: 0
   field :views, type: Integer, default: 0
   field :click, type: Integer, default: 0
