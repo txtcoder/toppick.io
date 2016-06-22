@@ -176,6 +176,23 @@
         min-height: 550px;
     }
 
+    #home-slider .carousel-inner .item .carousel-content h3{
+        color: white;
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 22px;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    #home-slider .carousel-inner .item .carousel-content p{
+        font-size: 18px;
+        color: #ffffff;
+        line-height: 23px;
+        font-weight: 700;
+    }
+
     #home-slider .item.banner1{
         background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center left;
     }
