@@ -38,7 +38,7 @@
     } 
 
     #home-slider .item.banner1{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1_lg.jpg)no-repeat center center;
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1_lg.jpg)no-repeat center left;
     }
 
     #home-slider .item.banner2{
@@ -177,7 +177,7 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center left;
     }
 
     #home-slider .item.banner2{
@@ -329,7 +329,7 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center left;
     }
 
     #home-slider .item.banner2{
@@ -477,7 +477,7 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center left;
     }
 
     #home-slider .item.banner2{
@@ -617,7 +617,7 @@
         margin-top: 0px;
         font-weight: 700;
         font-size: 17px;
-        line-height: 10px;
+        line-height: 15px;
         text-transform: uppercase;
         display: block;
     }
