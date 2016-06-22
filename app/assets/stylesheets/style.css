@@ -199,13 +199,14 @@ a:hover{
 }
     
 .btn.btn-order:hover, .btn.btn-order:focus {
-    background-color: #efc319;
+    background-color: #f9e62e;
     border-color: #404041;
     -o-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	font-weight: 700;
+	font-size:16px;
 }
 /* END Product Detail Page Button */
 
