@@ -30,6 +30,8 @@ class ProductsController < ApplicationController
         @products = Product.sort_by_new
     elsif params[:sort] && params[:sort]="views"
         @products = Product.most_viewed
+    elsif params[:sort] && params[:osrt]="editor"
+        @products = Product.editor_pick
     else
        @products = Product.hot 
     end
@@ -113,7 +115,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :url, :domain, :price, :images, :country, :specs)
+      params.require(:product).permit(:name, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick)
     end
     
     def set_s3_direct_post

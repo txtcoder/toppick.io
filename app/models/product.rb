@@ -12,6 +12,7 @@ class Product
   field :price, type: String
   field :country, type: String
   field :specs, type: String
+  field :editor_pick, type: Boolean, default: false
   field :display, type: Integer, default: 0
   field :views, type: Integer, default: 0
   field :click, type: Integer, default: 0
@@ -31,6 +32,7 @@ class Product
   scope :sort_by_new, -> {order_by(:created_at => :desc)}
   scope :hot, ->{order_by(:d_to_v => :desc)}
   scope :most_viewed, -> {order_by(:views => :desc)}
+  scope :editor_pick, ->{where(editor_pick: true)}
 
 
   def update_affiliate_link
