@@ -35,7 +35,7 @@ class ProductsController < ApplicationController
     else
        @products = Product.hot 
     end
-    filter_by_country()
+   # filter_by_country()
     product_ids = @products.map{|p| p.id.to_s}
     ProductsController.delay.update_display(product_ids)
 
