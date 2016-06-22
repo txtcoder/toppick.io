@@ -37,6 +37,18 @@
         min-height: 550px;
     } 
 
+    #home-slider .item.banner1{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1_lg.jpg);
+    }
+
+    #home-slider .item.banner2{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2_lg.jpg);
+    }
+
+    #home-slider .item.banner3{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg);
+    }
+
     #home-slider .carousel-inner {
         height: 550px;
     }
@@ -146,6 +158,19 @@
         padding:80px 0px 30px;
         min-height: 550px;
     }
+
+    #home-slider .item.banner1{
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+    }
+
+    #home-slider .item.banner2{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+    }
+
+     #home-slider .item.banner3{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg);
+    }
+
 
     #home-slider .carousel-inner {
         height: 550px;
@@ -286,6 +311,18 @@
         min-height: 500px;
     }
 
+    #home-slider .item.banner1{
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+    }
+
+    #home-slider .item.banner2{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+    }
+
+    #home-slider .item.banner3{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg);
+    }
+
     #home-slider .carousel-inner {
         height: 500px;
     }
@@ -421,6 +458,19 @@
         padding:80px 0px 30px;
         min-height: 500px;
     }
+
+    #home-slider .item.banner1{
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+    }
+
+    #home-slider .item.banner2{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+    }
+
+    #home-slider .item.banner3{
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg);
+    }
+
     #home-slider .carousel-inner {
         height: 500px;
     }
