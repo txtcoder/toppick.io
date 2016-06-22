@@ -38,15 +38,15 @@
     } 
 
     #home-slider .item.banner1{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1_lg.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1_lg.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner2{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2_lg.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2_lg.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner3{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg)no-repeat center right;
     }
 
     #home-slider .carousel-inner {
@@ -177,15 +177,15 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner2{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg)no-repeat center center;
     }
 
      #home-slider .item.banner3{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3_lg.jpg)no-repeat center right;
     }
 
 
@@ -329,15 +329,15 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner2{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner3{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg)no-repeat center right;
     }
 
     #home-slider .carousel-inner {
@@ -477,15 +477,15 @@
     }
 
     #home-slider .item.banner1{
-        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg);
+        background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner1.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner2{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner2.jpg)no-repeat center center;
     }
 
     #home-slider .item.banner3{
-      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg);
+      background:url(https://s3-us-west-2.amazonaws.com/toppickimages/img/banner3.jpg)no-repeat center right;
     }
 
     #home-slider .carousel-inner {
