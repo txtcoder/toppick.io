@@ -64,7 +64,7 @@
                 </ul>
                 <div id="myTabContent" class="tab-content">
                   <div class="tab-pane fade active in" id="info">
-                <p><%= @product.specs %></p>
+                <p><%= @product.specs.gsub(/\n/, '<br/>').html_safe %></p>
                   </div>
                   <div class="tab-pane fade" id="review">
                 <p>Howdy, I'm in Section 2. Etiam luctus, tellus sed varius facilisis, turpis nisl mollis metus, adipiscing scelerisque felis dui ac lacus.
