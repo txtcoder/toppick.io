@@ -113,7 +113,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :url, :domain, :price, :images, :country)
+      params.require(:product).permit(:name, :description, :url, :domain, :price, :images, :country, :specs)
     end
     
     def set_s3_direct_post
