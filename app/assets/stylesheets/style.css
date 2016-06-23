@@ -1008,6 +1008,12 @@ blockquote {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+	-o-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-ms-background-size: cover !important;
+	background-size: cover !important;
+
 }
 
 .caption-details{
