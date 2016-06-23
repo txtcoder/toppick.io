@@ -28,9 +28,9 @@ class ProductsController < ApplicationController
   def index
     if params[:sort] && params[:sort]=="new"
         @products = Product.sort_by_new
-    elsif params[:sort] && params[:sort]="views"
+    elsif params[:sort] && params[:sort]=="views"
         @products = Product.most_viewed
-    elsif params[:sort] && params[:sort]="editor"
+    elsif params[:sort] && params[:sort]=="editor"
         @products = Product.editor_pick
     else
        @products = Product.hot 
