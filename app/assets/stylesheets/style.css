@@ -21,7 +21,6 @@
 	[3. NAVBAR]
 	[4. SLIDER]
 	[5. TAGLINE]
-	[6. FEATURED]
 	[7. CATALOG]
 	[8. TESTOMONIAL]
 	[12. HEAD SINGLE]
@@ -1528,51 +1527,6 @@ blockquote {
 }
 
 
-
-/* 
-	==================
-	[17. TEAM]
-	==================
-*/
-#theteam .team-container{
-	position: relative;
-	text-align: center;
-}
-
-#theteam .team-container h3{
-	margin-top: 20px;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-
-#theteam .team-container .featured-photos{
-	padding: 25px 45px;
-	border-radius: 3px;
-	-o-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	background: #F1C40F;
-	max-width: 200px;
-	margin: 0 auto;
-	position: relative;
-}
-
-#theteam .team-container .featured-photos:after{
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	border: 15px solid #F1C40F;
-	border-bottom: 0px solid transparent ;
-	border-right: 20px solid transparent;
-	border-left: 20px solid transparent;
-	left: 50%;
-	bottom: -14px;
-	margin-left: -20px;
-}
 
 
 /* 
