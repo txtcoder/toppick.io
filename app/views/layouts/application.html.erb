@@ -46,10 +46,10 @@
         <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">VIEW ALL</a></li>
-          <li><a href="#">TOP VIEWED</a></li>
-          <li><a href="#">EDITOR'S PICK</a></li>
-          <li><a href="#">NEW TO OLD</a></li>
+          <li><%= link_to "VIEW ALL", root_path(:sort => "hot") %></li>
+          <li><%= link_to "TOP VIEWED", root_path(:sort => "views") %></li>
+          <li><%= link_to "EDITOR'S PICK", root_path(:sort => "editor") %></li>
+          <li><%= link_to "NEW TO OLD", root_path(:sort => "new") %></li>
         </ul>
         </li>
         <li class="dropdown">
