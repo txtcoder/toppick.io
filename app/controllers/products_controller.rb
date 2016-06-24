@@ -26,6 +26,9 @@ class ProductsController < ApplicationController
   end
 
   def index
+    if params[:country]
+        set_country(params[:country])
+    end
     if params[:sort] && params[:sort]=="new"
         @products = Product.sort_by_new
     elsif params[:sort] && params[:sort]=="views"
@@ -35,7 +38,7 @@ class ProductsController < ApplicationController
     else
        @products = Product.hot 
     end
-    filter_by_country()
+    filter_by_country(get_country)
     product_ids = @products.map{|p| p.id.to_s}
     ProductsController.delay.update_display(product_ids)
 
@@ -129,14 +132,16 @@ class ProductsController < ApplicationController
         end
     end
 
-    def filter_by_country
-        require 'geoip'
-        @geoip ||= GeoIP.new("./db/GeoIP.dat")
-        remote_ip = request.remote_ip 
-        if remote_ip != "127.0.0.1" #todo: check for other local addresses or set default value
-            location_location = @geoip.country(remote_ip)
-            if location_location != nil     
-                locale = location_location.country_name
+    def filter_by_country(locale)
+        if locale.nil?
+            require 'geoip'
+            @geoip ||= GeoIP.new("./db/GeoIP.dat")
+            remote_ip = request.remote_ip 
+            if remote_ip != "127.0.0.1" #todo: check for other local addresses or set default value
+                location_location = @geoip.country(remote_ip)
+                if location_location != nil     
+                    locale = location_location.country_name
+                end
             end
         end
         if locale && locale  == "Canada"
