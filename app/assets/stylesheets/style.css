@@ -543,9 +543,19 @@ blockquote {
 	position: absolute;
 	top: 0;
 	right: 0;
+	padding-top: 5px;
 }
 .flag_icon ul{
 	list-style-type: none;
+}
+.flag_icon ul li{
+	padding: 0;
+}
+.flag_icon p{
+	font-family: 'Orbitron', arial, sans-serif;
+	font-weight: 700;
+	color: #404041;
+
 }
 /* 
 	==================
