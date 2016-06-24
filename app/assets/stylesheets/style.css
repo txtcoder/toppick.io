@@ -17,24 +17,24 @@
 	TABLE OF CONTENT
 	========================================
 	
-	[2. GLOBAL STYLE]
-	[3. NAVBAR]
-	[4. SLIDER]
-	[5. TAGLINE]
-	[7. CATALOG]
-	[12. PRODUCT PAGE]
-	[13. PAGE CONTENT]
-	[15. ITEM SINGLE]
-	[18. CONTACT FORM]
-	[21. FOOTER]
-	[22. COPYRIGHT]
+	[1. GLOBAL STYLE]
+	[2. NAVBAR]
+	[3. SLIDER]
+	[4. TAGLINE]
+	[5. CATALOG]
+	[6. PRODUCT PAGE]
+	[7. PAGE CONTENT]
+	[8. ITEM SINGLE]
+	[9. CONTACT FORM]
+	[10. FOOTER]
+	[11. COPYRIGHT]
 
 */
 
 
 /* 
 	==================
-	[2. GLOBAL STYLE]
+	[1. GLOBAL STYLE]
 	==================
 */
 body{
@@ -256,7 +256,7 @@ blockquote {
 
 /*
 	==============
-	[3. NAVBAR]
+	[2. NAVBAR]
 	==============
 */
 .navbar{
@@ -532,7 +532,7 @@ blockquote {
 
 /* 
 	==================
-	[4. SLIDER]
+	[3. SLIDER]
 	==================
 */
 
@@ -801,7 +801,7 @@ blockquote {
 
 /* 
 	==================
-	[5. TAGLINE]
+	[4. TAGLINE]
 	==================
 */
 #tagline{
@@ -946,7 +946,7 @@ blockquote {
 
 /* 
 	==================
-	[7. CATALOG]
+	[5. CATALOG]
 	==================
 */
 #catalogue{
@@ -1099,7 +1099,7 @@ blockquote {
 
 /* 
 	==================
-	[9. ABOUT US]
+	[6. ABOUT US]
 	==================
 */
 #about_us{
@@ -1228,7 +1228,7 @@ blockquote {
 
 /* 
 	==================
-	[12. PRODUCT PAGE ]
+	[7. PRODUCT PAGE ]
 	==================
 */
 .heads{
@@ -1255,7 +1255,7 @@ blockquote {
 
 /* 
 	==================
-	[13. PAGE CONTENT]
+	[8. PAGE CONTENT]
 	==================
 */
 .page-content{
@@ -1283,7 +1283,7 @@ blockquote {
 
 /* 
 	==================
-	[15. ITEM SINGLE]
+	[9. ITEM SINGLE]
 	==================
 */
 #itemsingle{
@@ -1525,7 +1525,7 @@ blockquote {
 
 /* 
 	==================
-	[21. FOOTER]
+	[10. FOOTER]
 	==================
 */
 #footer{
@@ -1657,7 +1657,7 @@ blockquote {
 
 /* 
 	==================
-	[22. COPYRIGHT]
+	[11. COPYRIGHT]
 	==================
 */
 #copyright{
