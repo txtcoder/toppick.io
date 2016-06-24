@@ -22,6 +22,7 @@
 	[4. SLIDER]
 	[5. TAGLINE]
 	[7. CATALOG]
+    [11. SHARE BUTTON]
 	[12. PRODUCT PAGE]
 	[13. PAGE CONTENT]
 	[15. ITEM SINGLE]
@@ -1225,6 +1226,23 @@ blockquote {
 }
 
 
+/* 
+   ===================
+   [11. SHARE BUTTON  ]
+   ===================
+ */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons img{
+  width: 32px;
+}
 
 /* 
 	==================
