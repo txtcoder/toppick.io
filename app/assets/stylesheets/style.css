@@ -1,12 +1,12 @@
 /*
 	========================================
-	Dodolan Manuk - Catalog Themes
+	TOPPICKS 
 	========================================
 	
-	@author			: Afriq Yasin Ramadhan
-	@version		: v1.1
-	@date-create	: 6/1/2013
-	@last-update	: 2/28/2014
+	@author			: Timothy Sun & Tommy Tong
+	@version		: v1.0
+	@date-create	: 6/10/2016
+	@last-update	: 6/24/2016
 	@file-name		: style
 
 */
@@ -22,10 +22,10 @@
 	[4. SLIDER]
 	[5. TAGLINE]
 	[7. CATALOG]
-	[12. HEAD SINGLE]
+	[12. PRODUCT PAGE]
 	[13. PAGE CONTENT]
 	[15. ITEM SINGLE]
-	[18. CONTACT]
+	[18. CONTACT FORM]
 	[21. FOOTER]
 	[22. COPYRIGHT]
 
@@ -1228,7 +1228,7 @@ blockquote {
 
 /* 
 	==================
-	[12. HEAD SINGLE]
+	[12. PRODUCT PAGE ]
 	==================
 */
 .heads{
@@ -1520,90 +1520,6 @@ blockquote {
 
 .quick-search h5{
 	font-weight: 600;
-}
-
-
-
-
-/* 
-	==================
-	[18. CONTACT]
-	==================
-*/
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea,
-.coment input[type="text"],
-.coment input[type="email"],
-.coment textarea,
-.confirm input[type="text"],
-.confirm input[type="email"],
-.confirm textarea{
-	border-radius: 4px;
-	-o-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border: 0px;
-	resize: none;
-	background: #eaeaea;
-	-webkit-box-shadow: 0 0 1px 2px #eaeaea;
-     -moz-box-shadow: 0 0 1px 2px #eaeaea; 
-          box-shadow: 0 0 1px 2px #eaeaea;
-	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
-          margin-bottom: 10px;
-}
-
-.contact input[type="text"]:focus,
-.contact input[type="email"]:focus,
-.contact textarea:focus,
-.coment input[type="text"]:focus,
-.coment input[type="email"]:focus,
-.coment textarea:focus,
-.confirm input[type="text"]:focus,
-.confirm input[type="email"]:focus,
-.confirm textarea:focus{
-	color: #F1C40F;
-	-webkit-box-shadow: 0 0 1px 2px #F1C40F !important; 
-     -moz-box-shadow: 0 0 1px 2px #F1C40F !important;
-          box-shadow: 0 0 1px 2px #F1C40F !important;
-	outline: none;
-}
-
-.contact textarea,
-.coment textarea{
-	padding: 10px;
-}
-
-.contact input[type="text"],
-.contact input[type="email"]{
-	height: 46px;
-	padding: 10px
-}
-
-.confirm input[type="text"],
-.confirm input[type="email"]{
-	height: 35px;
-	padding: 10px;
-}
-
-.coment input[type="text"],
-.coment input[type="email"]{
-	height: 35px;
-	padding: 10px;
-	margin-right: 5px;
-}
-
-#maps{
-	width: 100%;
-	height: 350px;
-	padding: 20px 0;
-}
-
-#maps img{
-	max-width:none;
 }
 
 
