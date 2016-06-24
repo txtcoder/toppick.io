@@ -17,25 +17,25 @@
 	TABLE OF CONTENT
 	========================================
 	
-	[2. GLOBAL STYLE]
-	[3. NAVBAR]
-	[4. SLIDER]
-	[5. TAGLINE]
-	[7. CATALOG]
-    [11. SHARE BUTTON]
-	[12. PRODUCT PAGE]
-	[13. PAGE CONTENT]
-	[15. ITEM SINGLE]
-	[18. CONTACT FORM]
-	[21. FOOTER]
-	[22. COPYRIGHT]
+	[1. GLOBAL STYLE]
+	[2. NAVBAR]
+	[3. SLIDER]
+	[4. TAGLINE]
+	[5. CATALOG]
+    [6. SHARE BUTTON]
+	[7. PRODUCT PAGE]
+	[8. PAGE CONTENT]
+	[9. ITEM SINGLE]
+	[10. CONTACT FORM]
+	[11. FOOTER]
+	[12. COPYRIGHT]
 
 */
 
 
 /* 
 	==================
-	[2. GLOBAL STYLE]
+	[1. GLOBAL STYLE]
 	==================
 */
 body{
@@ -257,7 +257,7 @@ blockquote {
 
 /*
 	==============
-	[3. NAVBAR]
+	[2. NAVBAR]
 	==============
 */
 .navbar{
@@ -533,7 +533,7 @@ blockquote {
 
 /* 
 	==================
-	[4. SLIDER]
+	[3. SLIDER]
 	==================
 */
 
@@ -802,7 +802,7 @@ blockquote {
 
 /* 
 	==================
-	[5. TAGLINE]
+	[4. TAGLINE]
 	==================
 */
 #tagline{
@@ -947,7 +947,7 @@ blockquote {
 
 /* 
 	==================
-	[7. CATALOG]
+	[5. CATALOG]
 	==================
 */
 #catalogue{
@@ -1100,7 +1100,7 @@ blockquote {
 
 /* 
 	==================
-	[9. ABOUT US]
+	[6. ABOUT US]
 	==================
 */
 #about_us{
@@ -1228,7 +1228,7 @@ blockquote {
 
 /* 
    ===================
-   [11. SHARE BUTTON  ]
+   [7. SHARE BUTTON  ]
    ===================
  */
 ul.share-buttons{
@@ -1246,7 +1246,7 @@ ul.share-buttons img{
 
 /* 
 	==================
-	[12. PRODUCT PAGE ]
+	[8. PRODUCT PAGE ]
 	==================
 */
 .heads{
@@ -1273,7 +1273,7 @@ ul.share-buttons img{
 
 /* 
 	==================
-	[13. PAGE CONTENT]
+	[9. PAGE CONTENT]
 	==================
 */
 .page-content{
@@ -1301,7 +1301,7 @@ ul.share-buttons img{
 
 /* 
 	==================
-	[15. ITEM SINGLE]
+	[10. ITEM SINGLE]
 	==================
 */
 #itemsingle{
@@ -1543,7 +1543,7 @@ ul.share-buttons img{
 
 /* 
 	==================
-	[21. FOOTER]
+	[11. FOOTER]
 	==================
 */
 #footer{
@@ -1675,7 +1675,7 @@ ul.share-buttons img{
 
 /* 
 	==================
-	[22. COPYRIGHT]
+	[12. COPYRIGHT]
 	==================
 */
 #copyright{
