@@ -14,6 +14,7 @@ get_hot = function() {
         async: true,
         success: function(result) {
             $("#catalogue").replaceWith(result);
+            new WOW().init();
         }
     });
 };
@@ -26,6 +27,7 @@ get_views = function() {
         async: true,
         success: function(result) {
             $("#catalogue").replaceWith(result);
+            new WOW().init();
         }
     });
 };
@@ -38,6 +40,7 @@ get_editor = function() {
         async: true,
         success: function(result) {
             $("#catalogue").replaceWith(result);
+            new WOW().init();
         }
     });
 };
@@ -50,6 +53,7 @@ get_new = function() {
         async: true,
         success: function(result) {
             $("#catalogue").replaceWith(result);
+            new WOW().init();
         }
     });
 };
