@@ -530,7 +530,10 @@ blockquote {
 	margin-top: 2px;
 }
 
-
+.flag {
+	width: 20px;
+	height: auto;
+}
 /* 
 	==================
 	[3. SLIDER]
