@@ -26,11 +26,9 @@
 	[7. CATALOG]
 	[8. TESTOMONIAL]
 	[9. BLOG]
-	[10. COMMENT]
 	[12. HEAD SINGLE]
 	[13. PAGE CONTENT]
 	[15. ITEM SINGLE]
-	[16. SIDEBAR ITEM]
 	[17. TEAM]
 	[18. CONTACT]
 	[19. TESTIMONI]
@@ -1240,113 +1238,6 @@ blockquote {
 	height: 150px;
 	line-height: 18px;
 }
-
-
-/* 
-	==================
-	[10. COMMENT]
-	==================
-*/
-.comment{
-	margin-top: 0px;
-	padding-bottom: 20px;
-}
-
-.comment h3{
-	font-size: 17px;
-	line-height: 19px;
-	font-weight: 600;
-	color: #555;
-	margin: 30px 0;
-}
-
-.comment ul.comments{
-	list-style-type: none;
-	margin-left: 0px;
-}
-
-.comment img{
-	box-shadow: none;
-	-o-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	opacity: 1;
-	filter: Alpha(opacity=100);
-	border-radius: 4px;
-	-o-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-}
-
-.comment img.avatar {
-	position: relative;
-	float: left;
-	margin-left: 0;
-	margin-top: 0;
-	width: 60px;
-	height: 60px;
-}
-
-.post-comments{
-	border: 1px solid #eaeaea;
-    margin-bottom: 20px;
-    margin-left: 80px;
-	margin-right: 10px;
-    padding: 10px 20px;
-    position: relative;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-	background: #eaeaea;
-	position: relative;
-}
-
-.post-comments:before{
-	content: "";
-	position: absolute;
-	left: -20px;
-	top: 10px;
-	border: 10px;
-	border-left: 10px solid transparent;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid #eaeaea;
-}
-
-.comment .meta {
-	font: 12px 'Open Sans', serif;
-	color: #666;
-	padding-bottom: 8px;
-	margin-bottom: 10px !important;
-	border-bottom: 1px dotted #dddddd;
-}
-
-.comment ul.comments ul{
-	list-style-type: none;
-	margin-left: 80px;
-}
-
-.comment label:before{
-	clear: both;
-}
-
-.comment label{
-	margin-top: 15px;
-}
-
-.comment .textarea{
-	resize: none !important;
-	margin-bottom: 15px;
-}
-
-.comment .textarea:after{
-	clear: both;
-}
-
-.coment form{
-	margin: 30px 0;
-}
-
 
 
 
