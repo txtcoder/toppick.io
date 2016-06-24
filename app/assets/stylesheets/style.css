@@ -264,6 +264,10 @@ blockquote {
 	margin-bottom: 0;
 	height: 80px;
 }
+.navbar .container{
+	position: relative;
+
+}
 
 .navbar.navbar-default{
 	-webkit-box-shadow: none;
@@ -535,6 +539,14 @@ blockquote {
 	height: auto;
 }
 
+.flag_icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.flag_icon ul{
+	list-style-type: none;
+}
 /* 
 	==================
 	[3. SLIDER]
