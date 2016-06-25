@@ -94,21 +94,21 @@
 
         <!-- START FLAG -->
         <li>
-          <a href="#">
+          <%= link_to root_path(:country=>"Canada") do %>
             <ul class="list-inline">
               <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/cn_flag.jpg" class="flag"/></li>
               <li><p>CANADA</p></li>
              </ul>
-          </a>
+          <% end %>
         </li>
 
         <li>
-          <a href="#">
+          <%= link_to root_path(:country=>"USA") do %>
             <ul class="list-inline">
               <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/us_flag.jpg" class="flag"/></li>
               <li><p>US</p></li>
              </ul>
-          </a>
+          <% end %>
         </li>
         <!-- END FLAG -->
 
@@ -133,12 +133,12 @@
 
               <!-- START FLAG ICON -->
       <div class="flag_icon">
-          <ul class="list-inline">
+          <ul class="list-inline <%= "hidden" unless get_country=="Canada" %>">
               <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/cn_flag.jpg" class="flag"/></li>
               <li><p>CA</p></li>
           </ul>
 
-          <ul class="list-inline hidden">
+          <ul class="list-inline <%= "hidden" unless get_country=="USA" %>">
               <li><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/us_flag.jpg" class="flag"/></li>
               <li><p>US</p></li>
           </ul>
