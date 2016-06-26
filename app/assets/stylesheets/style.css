@@ -1057,7 +1057,19 @@ blockquote {
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
+
+  display: -o-box;
+  -o-line-clamp: 3;
+  -o-box-orient: vertical; 
+
+  display: -moz-box;
+  -moz-line-clamp: 3;
+  -moz-box-orient: vertical;
+
+  display: -ms-box;
+  -ms-line-clamp: 3;
+  -ms-box-orient: vertical;   
 }
 
 /* | END | USING CLAMP.JS TO CLIP THE PARAGRAPH */
