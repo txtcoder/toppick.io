@@ -1054,11 +1054,6 @@ blockquote {
   overflow: hidden;
 }
 
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-}
 
 /* | END | USING CLAMP.JS TO CLIP THE PARAGRAPH */
 

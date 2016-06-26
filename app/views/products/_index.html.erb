@@ -51,6 +51,15 @@
         </div>
 
         <% end %>
+        <script>
+            var mods =  document.getElementsByClassName("line-clamp");
+            for (var i = 0; i < mods.length; i++) 
+            {
+                $clamp(mods[i], {clamp: 3, useNativeClamp: false});
+
+            }
+            
+        </script> 
       </div>
         <% if logged_in? %>
         <%= link_to 'New Product', new_product_path %>
