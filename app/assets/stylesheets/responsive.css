@@ -548,6 +548,10 @@
         padding-bottom: 70px;
     }
 
+    #catalogue .thumbnail .caption-img{
+        height: 250px;
+    }
+
     #about_us ul li p{
     font-family: 'Lato', sans-serif;
     padding-bottom: 30px;
@@ -669,6 +673,10 @@
     #catalogue .small_only{
         padding-right: 5px;
         padding-left: 5px;
+    }
+
+    #catalogue .thumbnail .caption-img{
+        height: 250px;
     }
 
     #break_icon{
