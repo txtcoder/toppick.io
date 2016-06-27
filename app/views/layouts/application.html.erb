@@ -4,6 +4,12 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+   <meta property="fb:app_id" content="528023644055911" />
+   <meta property="og:url" content= "<%= request.original+url %>" />
+   <meta property="og:title" content = "<%= if @title then @title; else "TOP PICKS" end %>" />
+   <meta property="og:description" content = "<%= if @description then @description; else "We pick it, you enjoy it!" end %>" />
+   <meta property="og:image" content = "<%= if @image then @image; else "//d2h85wlswz56rg.cloudfront.net/img/logo.jpg" end %>" />
+
   <title><%= if @title then @title; else "TOP PICKS" end %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
