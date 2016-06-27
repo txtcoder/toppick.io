@@ -8,7 +8,6 @@
    <meta property="og:url" content="<%= request.original_url %>" />
    <meta property="og:title" content="<%= if @title then @title; else "TOP PICKS" end %>" />
    <meta property="og:description" content="<%= if @description then @description; else "We pick it, you enjoy it!" end %>" />
-   <meta property="og:image" content="<%= if @image then "http:"+@image; else "https://s3-us-west-2.amazonaws.com/toppickimages/img/logo.jpg" end %>" />
 
   <title><%= if @title then @title; else "TOP PICKS" end %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
