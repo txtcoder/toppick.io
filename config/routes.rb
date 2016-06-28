@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :feedbacks
-  get 'signup' => 'admin#new'
+  get 'signup' => 'admins#new'
   resources :admins
   get 'login' =>'sessions#new'
   post 'login' => 'sessions#create'
