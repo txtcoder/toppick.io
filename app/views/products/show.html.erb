@@ -1,6 +1,6 @@
 <% @title = @product.name %>
 <% @description = @product.description %>
-<% @image = @product.images %>
+<% @image = to_cdn(@product.images) %>
 <!-- begin:heading -->
   <div class="heads">
     <div class="container">
