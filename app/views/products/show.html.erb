@@ -1,3 +1,6 @@
+<% @title = @product.name %>
+<% @description = @product.description %>
+<% @image = to_cdn(@product.images) %>
 <!-- begin:heading -->
   <div class="heads">
     <div class="container">
@@ -23,11 +26,11 @@
       </div>
     <!-- begin share tag -->
 <ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=<%= URI.encode(request.original_url) %>&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=<%= URI.encode(request.original_url) %>&text=:%20<%= URI.encode(@product.name) %>" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
-  <li><a href="https://plus.google.com/share?url=<%= URI.encode(request.original_url) %>" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/social_flat_rounded_rects_svg/Google%2B.svg"></a></li>
-  <li><a href="http://pinterest.com/pin/create/button/?url=<%= URI.encode(request.original_url) %>&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/social_flat_rounded_rects_svg/Pinterest.svg"></a></li>
-  <li><a href="http://www.reddit.com/submit?url=<%= URI.encode(request.original_url) %>&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="https://s3-us-west-2.amazonaws.com/toppickimages/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=<%= URI.encode(request.original_url) %>&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=<%= URI.encode(request.original_url) %>&text=:%20<%= URI.encode(@product.name) %>" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="https://plus.google.com/share?url=<%= URI.encode(request.original_url) %>" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Google%2B.svg"></a></li>
+  <li><a href="http://pinterest.com/pin/create/button/?url=<%= URI.encode(request.original_url) %>&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Pinterest.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=<%= URI.encode(request.original_url) %>&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
 </ul>
         <!-- end share tag -->
       <div class="row">
@@ -40,12 +43,12 @@
               
                 <div class="carousel-inner">
                   <div class="item active">
-                     <%= image_tag(@product.images) %>
+                     <%= image_tag(to_cdn(@product.images)) %>
                   </div>
                 </div>
                 
                 <ol class="carousel-indicators">
-                  <li data-target="#itemsingle" data-slide-to="0" class="active"><%= image_tag(@product.images, :class => "img-responsive") %></li>
+                  <li data-target="#itemsingle" data-slide-to="0" class="active"><%= image_tag(to_cdn(@product.images), :class => "img-responsive") %></li>
                 </ol>
               
               </div>

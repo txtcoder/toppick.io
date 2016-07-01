@@ -19,6 +19,6 @@
 //= require respond.min
 //= require script
 //= require html5shiv
-//= require wow.min
 //= require clamp.min
+//= require wow.min
 //= require dynamicload

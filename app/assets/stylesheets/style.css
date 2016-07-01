@@ -762,7 +762,7 @@ blockquote {
 #home-slider .carousel-control.left {
 	border-top-right-radius:5px;
 	border-bottom-right-radius:5px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/slider_arrow_left.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/slider_arrow_left.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -773,7 +773,7 @@ blockquote {
 }
 
 #home-slider .carousel-control.left:hover {
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/slider_arrow_left_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/slider_arrow_left_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -790,7 +790,7 @@ blockquote {
 #home-slider .carousel-control.right {
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/slider_arrow_right.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/slider_arrow_right.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -804,7 +804,7 @@ blockquote {
 #home-slider .carousel-control.right:hover {
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/slider_arrow_right_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/slider_arrow_right_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -861,7 +861,7 @@ blockquote {
 #tagline .product_nav .view_all{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/view_all.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/view_all.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -871,7 +871,7 @@ blockquote {
 #tagline .product_nav .top_viewed{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/top_viewed.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/top_viewed.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -881,7 +881,7 @@ blockquote {
 #tagline .product_nav .editor_pick{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/editor_pick.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/editor_pick.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -891,7 +891,7 @@ blockquote {
 #tagline .product_nav .new_old{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/new_old.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/new_old.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -904,7 +904,7 @@ blockquote {
 #tagline .product_nav .view_all:active{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/view_all_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/view_all_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -920,7 +920,7 @@ blockquote {
 {
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/top_viewed_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/top_viewed_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -936,7 +936,7 @@ blockquote {
 #tagline .product_nav .editor_pick:active{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/editor_pick_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/editor_pick_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -952,7 +952,7 @@ blockquote {
 #tagline .product_nav .new_old:active{
 	height: 50px;
 	width: auto;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/new_old_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/new_old_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1054,6 +1054,7 @@ blockquote {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1071,6 +1072,8 @@ blockquote {
   -ms-line-clamp: 3;
   -ms-box-orient: vertical;   
 }
+=======
+>>>>>>> 92615d1ca510fbc5c586896644680bd559c289be
 
 /* | END | USING CLAMP.JS TO CLIP THE PARAGRAPH */
 
@@ -1087,7 +1090,7 @@ blockquote {
 	font-family: 'Orbitron', sans-serif;
 	font-weight: 700;
 	color: #404041;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/highlight_price.png);
+	background: url(//image.toppicks.tech/img/highlight_price.png);
 	-o-background-size: contain !important;
 	-moz-background-size: contain !important;
 	-webkit-background-size: contain !important;
@@ -1299,7 +1302,7 @@ ul.share-buttons img{
 	-webkit-background-size: cover !important;
 	-ms-background-size: cover !important;
 	background-size: cover !important;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/product_banner.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/product_banner.png)no-repeat center center;
 	background-color: #f9e62e;
 }
 
@@ -1454,7 +1457,7 @@ ul.share-buttons img{
 	font-weight: 600;
 	color: 404041;
 	font-family: 'Orbitron', arial, sans-serif;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/highlight_price.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/highlight_price.png)no-repeat center center;
 	-o-background-size: cover !important;
 	-moz-background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -1544,7 +1547,7 @@ ul.share-buttons img{
 	-webkit-background-size: contain !important;
 	-ms-background-size: contain !important;
 	background-size: contain !important;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/product_img.jpg)no-repeat center center;
+	background: url(//image.toppicks.tech/img/product_img.jpg)no-repeat center center;
 }
 
 .product-tabs .thumbnail h3{
@@ -1606,7 +1609,7 @@ ul.share-buttons img{
 #footer ul li a #twitter_icon{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/twitter_icon.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/twitter_icon.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1616,7 +1619,7 @@ ul.share-buttons img{
 #footer ul li a #reddit_icon{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/reddit_icon.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/reddit_icon.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1626,7 +1629,7 @@ ul.share-buttons img{
 #footer ul li a #facebook_icon{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/facebook_icon.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/facebook_icon.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1637,7 +1640,7 @@ ul.share-buttons img{
 #footer ul li a #twitter_icon:hover{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/twitter_icon_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/twitter_icon_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1651,7 +1654,7 @@ ul.share-buttons img{
 #footer ul li a #reddit_icon:hover{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/reddit_icon_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/reddit_icon_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -1665,7 +1668,7 @@ ul.share-buttons img{
 #footer ul li a #facebook_icon:hover{
 	height: 50px;
 	width: 50px;
-	background: url(https://s3-us-west-2.amazonaws.com/toppickimages/img/facebook_icon_hover.png)no-repeat center center;
+	background: url(//image.toppicks.tech/img/facebook_icon_hover.png)no-repeat center center;
 	-webkit-background-size: contain ;
     -moz-background-size: contain;
     -o-background-size: contain;
