@@ -317,8 +317,130 @@
 	    padding-right: 30px;
 	    padding-left: 30px;
 	    font-size: 25px;
+	}
+
+	#about_us #contact_section li .contact_button{
+		border: 2px solid #404041;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 3px;
+		-o-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		color: #404041;
+		text-decoration: none;
+		background-color: #f9e62e;
+		font-family: 'Orbitron', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+
+	}
+
+	#about_us #contact_section li .contact_button:hover{
+		font-size: 25px;
+		-o-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
 
 
+	#footer h3{
+		text-transform: uppercase;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+
+	#footer p{
+        
+        font-size: 20px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        margin-bottom: 20px;
+
+    }
+
+
+    /* ===========================
+   ====== Contact Form ======= 
+   =========================== */
+.forum-collapse {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f9e62e;
+	width: 100%;
+    -moz-box-shadow:    inset  0  20px 20px -20px #696868, 
+                        inset  0 -20px 20px -20px #696868;
+    -webkit-box-shadow: inset  0  20px 20px -20px #696868, 
+                        inset  0 -20px 20px -20px #696868;
+     box-shadow:        inset  0  20px 20px -20px #696868, 
+                        inset  0 -20px 20px -20px #696868;
+}
+
+.forum-collapse .container{
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.forum-collapse p {
+	padding-bottom: 20px;
+}
+
+.forum-collapse .contact-form ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.forum-collapse .contact-form ul li{
+	padding-top: 5px;
+}
+
+.contact-form input, textarea {
+	padding: 10px;
+	border: 2px solid #404041;
+	width: 100%;
+	font-family: 'Orbitron', arial, sans-serif;
+	text-align: center;
+		border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.contact-form input:focus {
+	background-color: #f4e787;
+	color: #404041;
+}
+.contact-form textarea:focus {
+	background-color: #f4e787;
+	color: #404041;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 18px;
+}
+
+
+    /* 
+	==================
+	[12. COPYRIGHT]
+	==================
+*/
+	#copyright p{
+		background: #404041;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		color: #ffffff;
+		font-size:15px;
+	}
 
 }
 
@@ -407,6 +529,12 @@
     #catalogue .thumbnail{
         margin-bottom: 35px;
     }
+
+    .forum-collapse .container{
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
     
 }
 
