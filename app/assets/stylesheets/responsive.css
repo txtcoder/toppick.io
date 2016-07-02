@@ -20,7 +20,9 @@
      #home-slider .carousel-inner {
         height: 700px;
     }
-
+	  #home-slider .carousel-inner .container {
+        width: 1300px;
+    }
      #home-slider .item.banner1{
       background:url(//image.toppicks.tech/img/banner1_lg.jpg)no-repeat center left;
     }
