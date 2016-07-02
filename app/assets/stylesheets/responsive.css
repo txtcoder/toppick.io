@@ -311,6 +311,13 @@
         height: auto;   
     }
 
+    #about_us ul li p{
+	    font-family: 'Lato', sans-serif;
+	    padding-bottom: 30px;
+	    padding-right: 30px;
+	    padding-left: 30px;
+	    font-size: 25px;
+
 
 
 }
