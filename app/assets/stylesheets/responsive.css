@@ -57,6 +57,11 @@
 	    font-weight: 700;
     }
 
+    #home-slider .carousel-control.left,#home-slider .carousel-control.right {
+        margin-top: 25%;
+        min-width: 60px;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
