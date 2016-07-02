@@ -85,6 +85,14 @@
 		min-height: 80px;
 	}
 
+	#product_nav_col{
+        width: 180px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
