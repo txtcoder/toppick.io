@@ -35,21 +35,7 @@
     }
 
     .navbar-default .navbar-nav > li > a {
-		float: none;
-		padding: 5px 10px;
-		margin-top: 10px;
-		text-transform: uppercase;
-		font-weight: 600;
-		color: #666666;
-		text-decoration: none;
-		text-shadow: none;
-		transition: color 0.1s ease-in-out;
-		-o-transition: color 0.1s ease-in-out;
-		-moz-transition: color 0.1s ease-in-out;
-		-webkit-transition: color 0.1s ease-in-out;
-		font-size: 20px;
-		position: relative;
-		font-family: 'Orbitron', sans-serif;
+		font-size: 20px !important;  
 	}
 
 	 #home-slider .item {
