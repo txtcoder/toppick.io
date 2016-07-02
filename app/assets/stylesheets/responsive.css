@@ -537,6 +537,11 @@
 		margin: 0 auto;
 		text-align: center;
 	}
+
+	#about_us #map{
+        width: 500px;
+        height: auto;   
+    }
     
 }
 
