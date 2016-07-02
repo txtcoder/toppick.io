@@ -97,6 +97,21 @@
  
 	}
 
+	.navbar-default .dropdown-menu  > li > a{
+		font-weight: 600;
+		color: #404041;
+		text-transform: uppercase;
+		font-size: 20px;
+		position: relative;
+		font-family: 'Orbitron', arial, sans-serif;
+
+	}
+
+	.navbar-default .dropdown-menu .dropdown_media_icon{
+		width: 20px;
+		height: auto;
+	}
+
 	.navbar-default .flag {
 		width: 40px;
 		height: auto;
@@ -290,6 +305,12 @@
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
+
+	  #about_us #map{
+        width: 700px;
+        height: auto;   
+    }
+
 
 
 }
@@ -528,6 +549,11 @@
 
     .navbar .nav-right{
         float: right;
+    }
+
+     #about_us #map{
+        width: 400px;
+        height: auto;   
     }
 }
 
