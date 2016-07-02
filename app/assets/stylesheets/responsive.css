@@ -121,6 +121,27 @@
 		color: #939597;
     }
 
+    #catalogue .caption-details .product_price{
+		font-size: 20px;
+		font-family: 'Orbitron', sans-serif;
+		font-weight: 700;
+		color: #404041;
+		background: url(//image.toppicks.tech/img/highlight_price.png);
+		-o-background-size: contain !important;
+		-moz-background-size: contain !important;
+		-webkit-background-size: contain !important;
+		-ms-background-size: contain !important;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding-right: 10px;
+
+
+}
+
 
 }
 
