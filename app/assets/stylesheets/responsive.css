@@ -33,6 +33,11 @@
       background:url(//image.toppicks.tech/img/banner3_lg.jpg)no-repeat center center;
     }
 
+    #home-slider .carousel-inner .item .carousel-content{
+
+        margin-top: 200px;
+    }
+
     #home-slider .carousel-inner .item .carousel-content h3{
 	    color: white;
 	    margin-top: 0px;
