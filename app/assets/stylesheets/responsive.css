@@ -67,6 +67,24 @@
         margin:0 auto;
     }
 
+    /* Different ICONS */
+
+    #tagline .product_nav .view_all{
+		min-height: 80px;
+	}
+
+	#tagline .product_nav .top_viewed{
+		min-height: 80px;
+	}
+
+	#tagline .product_nav .editor_pick{
+		min-height: 80px;
+	}
+
+	#tagline .product_nav .new_old{
+		min-height: 80px;
+	}
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
