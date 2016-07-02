@@ -97,6 +97,27 @@
  
 	}
 
+	.navbar-default .flag {
+		width: 40px;
+		height: auto;
+	}
+
+	.navbar-default .flag_icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.navbar-default .flag_icon p{
+		font-family: 'Orbitron', arial, sans-serif;
+		font-weight: 700;
+		color: #404041;
+		font-size: 15px;
+
+	}
+
 
 	 #home-slider .item {
         padding: 80px 0px 30px;

@@ -386,7 +386,7 @@ blockquote {
 	-o-transition: color 0.1s ease-in-out;
 	-moz-transition: color 0.1s ease-in-out;
 	-webkit-transition: color 0.1s ease-in-out;
-	font-size: 14px;
+	font-size: 12px;
 	position: relative;
 	font-family: 'Orbitron', sans-serif;
 }
