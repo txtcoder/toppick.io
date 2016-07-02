@@ -140,7 +140,44 @@
 		padding-right: 10px;
 
 
-}
+	}
+
+	#catalogue .view_details{
+		height: 65px;
+		background: #f9e62e;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	#catalogue .view_details .price{
+
+		margin: 0 auto;
+		width: 150px;
+		display: block;
+		text-align: center;
+		padding: 8px 3px;
+		color: #404041;
+		border: 2px solid #404041;
+		border-radius: 3px;
+		-o-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		font-size: 15px;
+		font-family: 'Orbitron', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		background-color: #f9e62e; 
+	}
+
+	.view_details .price:hover{
+		background-color: #ffffff; 
+		font-size: 16px;
+		font-weight: 900;
+		 -o-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
 
 
 }
