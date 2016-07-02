@@ -94,9 +94,32 @@
 	}
 
     #catalogue .container {
-        width: 1200px;
+        width: 1500px;
+    }
+ 	#catalogue .thumbnail{
+        width: 350px;
     }
 
+ 	#catalogue .thumbnail .caption-img{
+        min-height: 250px;
+    }
+
+ 	#catalogue .caption-details {
+ 		height: 230px;
+ 	}
+
+    #catalogue .caption-details h3{
+    	font-size: 23px;
+    	line-height: 25px;
+    }
+
+    #catalogue .caption-details p{
+    	font-size: 20px;
+    	line-height: 25px;
+    	font-family: 'Lato', sans-serif;
+		text-align: left;
+		color: #939597;
+    }
 
 
 }
