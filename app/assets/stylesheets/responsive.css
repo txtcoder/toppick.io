@@ -10,20 +10,32 @@
     @file-name      : responsive
 
 */
-@media screen and (min-width:1441px) and (max-width:1921px) {
+@media screen and (min-width:1441px){
 
 	 #home-slider .item {
         padding: 80px 0px 30px;
-        min-height: 700px;
+        min-height: 650px;
     } 
 
      #home-slider .carousel-inner {
-        height: 700px;
+        height: 650px;
+    }
+
+     #home-slider .item.banner1{
+      background:url(//image.toppicks.tech/img/banner1_lg.jpg)no-repeat center left;
+    }
+
+    #home-slider .item.banner2{
+      background:url(//image.toppicks.tech/img/banner2_lg.jpg)no-repeat center center;
+    }
+
+    #home-slider .item.banner3{
+      background:url(//image.toppicks.tech/img/banner3_lg.jpg)no-repeat center center;
     }
 
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) and (max-width:1440px){
 
     /* Nav bar */
      .navbar-default .container {
