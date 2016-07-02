@@ -62,6 +62,11 @@
         min-width: 60px;
     }
 
+     #tagline .product_nav{
+        width: 1000px;
+        margin:0 auto;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
