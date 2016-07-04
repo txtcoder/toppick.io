@@ -458,6 +458,10 @@
 		max-width: 1000px;
 	}
 
+	.page-content .page_content_xl p{
+		font-size: 20px;
+	}
+
 
 }
 
