@@ -454,8 +454,8 @@
 		padding: 200px 0 100px !important;
 	}
 
-	.page-content .container{
-		max-width: 1000px;
+	.page-content .page_container_xl.container{
+		max-width: 1400px;
 	}
 
 	.page-content .page_content_xl p{
