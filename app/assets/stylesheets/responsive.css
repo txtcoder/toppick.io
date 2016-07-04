@@ -455,14 +455,16 @@
 	}
 
 	.page-content .page_container_xl.container{
-		max-width: 1400px;
+		max-width: 1200px;
+		min-width: 1200px;
 	}
 
 	.page-content .page_content_xl p{
-		font-size: 20px;
+		font-size: 23px;
+		max-width: 700px;
+		min-width: 700px;
 	}
-
-
+	
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
