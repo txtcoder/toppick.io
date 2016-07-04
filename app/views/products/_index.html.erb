@@ -43,6 +43,7 @@
                 <%= link_to 'VIEW DETAIL', product, action: "show", class: "price" %>
               </div>
               <% if logged_in? %>
+                <%= link_to 'Copy', copy_product_path(product) %>
                 <%= link_to 'Edit', edit_product_path(product) %>
                 <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
               <% end %>
