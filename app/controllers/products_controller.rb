@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :copy]
+  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update, :copy]
   before_action :check_admin, only: [:new, :edit, :create, :update, :destroy]
   # GET /products
   # GET /products.json
@@ -68,6 +68,19 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+  end
+
+  #GET /products/1/copy
+  #:name, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick
+  def copy
+    temp = Product.new
+    temp.name = @product.name
+    temp.description = @product.description
+    temp.images= @product.images
+    temp.specs = @product.specs
+    temp.editor_pick = @product.editor_pick
+    @product = temp
+    render :edit
   end
 
   # POST /products
