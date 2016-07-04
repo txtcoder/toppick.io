@@ -444,6 +444,18 @@
 		font-size:15px;
 	}
 
+
+/* 
+	==================
+	[8. PRODUCT PAGE ]
+	==================
+*/
+	.heads{
+		padding: 200px 0 100px !important;
+
+	}
+
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
