@@ -452,7 +452,10 @@
 */
 	.heads{
 		padding: 200px 0 100px !important;
+	}
 
+	.page-content .container{
+		max-width: 1000px;
 	}
 
 
