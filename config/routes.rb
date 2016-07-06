@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'login' =>'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-
+  get 'signup' => 'admins#new'
+  resources :admins
     root 'products#index'
     resources :products
     get 'products/:id/copy' => 'products#copy', as: :copy_product
