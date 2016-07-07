@@ -5,6 +5,7 @@ class Product
   before_save :update_ratio
 
   field :name, type: String
+  field :one_liner, type: String
   field :description, type: String
   field :url, type: String
   field :domain, type: String

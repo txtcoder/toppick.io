@@ -76,6 +76,7 @@ class ProductsController < ApplicationController
     temp = Product.new
     temp.name = @product.name
     temp.description = @product.description
+    temp.one_liner = @product.one_liner
     temp.images= @product.images
     temp.specs = @product.specs
     temp.editor_pick = @product.editor_pick
@@ -131,7 +132,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick)
+      params.require(:product).permit(:name, :one_liner, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick)
     end
     
     def set_s3_direct_post
