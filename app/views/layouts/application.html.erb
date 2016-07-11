@@ -4,6 +4,10 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+   <% if @meta %>
+        <meta name="description" content="<%= @meta %>">
+   <% end %>
    <meta property="fb:app_id" content="528023644055911" />
    <meta property="og:url" content="<%= request.original_url %>" />
    <meta property="og:title" content="<%= if @title then @title; else "TOP PICKS" end %>" />
