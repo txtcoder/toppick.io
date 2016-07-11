@@ -69,7 +69,7 @@ class ProductsController < ApplicationController
             content=referral.split("=")[1]
             
             if url.include? tag+"="
-                url.gsub(/(tag=).*/, referral)
+                url.gsub(/(#{tag}=).*/, referral)
                 
             elsif url.include? "?" and url[-1]!="/"
                 url = url+"&"+referral
