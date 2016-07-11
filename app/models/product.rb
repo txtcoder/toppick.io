@@ -39,21 +39,21 @@ class Product
   def update_affiliate_link
     domain= URI.parse(url).host
     self.domain=domain
-    res = Affiliate.find_by( domain: domain)
-    if res
-        referral = res.referral
-        if url.include? referral
-            self.url=url
-        elsif url.include? "?" and url[-1]!="/"
-            self.url = url+"&"+referral
-        elsif url.include? "?"
-            self.url= url[0..-1]+"&"+referral
-        elsif url[-1]!="/"
-            self.url=url+"/?"+referral
-        else
-            self.url=url+"?"+referral
-        end
-    end    
+    #res = Affiliate.find_by( domain: domain)
+    #if res
+    #    referral = res.referral
+    #    if url.include? referral
+    #        self.url=url
+    #    elsif url.include? "?" and url[-1]!="/"
+    #        self.url = url+"&"+referral
+    #    elsif url.include? "?"
+    #        self.url= url[0..-1]+"&"+referral
+    #    elsif url[-1]!="/"
+    #        self.url=url+"/?"+referral
+    #    else
+    #        self.url=url+"?"+referral
+    #    end
+    #end    
   end
 
   def update_ratio
