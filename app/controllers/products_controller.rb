@@ -8,21 +8,27 @@ class ProductsController < ApplicationController
   def self.update_display(product_ids)
     product_ids.each do |id|
         product = Product.find(id)
-        product.display+=1
-        product.save
+        if product
+            product.display+=1
+            product.save
+        end
     end
   end
 
   def self.update_views(id)
     product= Product.find(id)
-    product.views+=1
-    product.save
+    if product
+        product.views+=1
+        product.save
+    end
   end
 
   def self.update_click(id)
     product= Product.find(id)
-    product.click+=1
-    product.save
+    if product
+        product.click+=1
+        product.save
+    end
   end
 
   def index
