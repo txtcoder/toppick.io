@@ -39,6 +39,7 @@ class Product
   def update_affiliate_link
     domain= URI.parse(url).host
     self.domain=domain
+    self.url=url.gsub(/\?.*/, "")
     #res = Affiliate.find_by( domain: domain)
     #if res
     #    referral = res.referral
