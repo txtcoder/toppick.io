@@ -62,7 +62,10 @@ class ProductsController < ApplicationController
         id=@product.id.to_s
         ProductsController.delay.update_click(id)
         url = @product.url
-        res = Affiliate.find_by( domain: @product.domain)
+        res = Affiliate.find_by( domain: @product.domain, source: get_referral)
+        unless res
+            res = Affiliate.find_by( domain: @product.domain, source: "original")
+        end
          if res
             referral = res.referral
             tag=referral.split("=")[0]

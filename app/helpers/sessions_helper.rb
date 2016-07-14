@@ -28,6 +28,23 @@ module SessionsHelper
     session[:country]
   end
 
+  def get_referral
+    if session[:referral].nil?
+        if params[:ref]
+            session[:referral]=params[:ref]
+        elsif !request.referer.blank?
+            if request.referer.include? "facebook"
+                session[:referral]="facebook"
+            else
+                session[:referral]="other"
+            end
+        else
+            session[:referral]="original"
+        end
+    end
+    session[:referral]
+  end
+
   def current_user
     @current_user ||= Admin.find(session[:admin_id]) if session[:admin_id]
   end

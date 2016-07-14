@@ -70,7 +70,7 @@ class AffiliatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def affiliate_params
-      params.require(:affiliate).permit(:domain, :referral)
+      params.require(:affiliate).permit(:domain, :referral, :source)
     end
 
     def check_admin
