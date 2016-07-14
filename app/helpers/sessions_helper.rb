@@ -30,8 +30,8 @@ module SessionsHelper
 
   def get_referral
     if session[:referral].nil?
-        if params[:ref]
-            session[:referral]=params[:ref]
+        if params[:q]
+            session[:referral]=params[:q]
         elsif !request.referer.blank?
             if request.referer.include? "facebook"
                 session[:referral]="facebook"
