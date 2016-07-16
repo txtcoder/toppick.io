@@ -64,7 +64,7 @@
               <% end %>
               <p>
 <%= link_to  product_path(@product, :external =>"true"), :class => "btn btn-order btn-large"  do %>
-<i class="icon-shopping-cart"></i>View at <%= @product.domain %><% end %>
+<i class="icon-shopping-cart"></i>View at <%= if @product.domain.include? "kckb.st" then "kickstarter.com"; else @product.domain end %><% end %>
             
     </p>
             </div>
