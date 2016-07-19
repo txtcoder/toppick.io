@@ -56,7 +56,7 @@
             </div>
             <div class="col-xl-4 col-md-7 col-sm-7 col-xs-7 page_content_xs page_content_xl">
               <h3><%= @product.name %></h3>
-              <p><%= @product.description%></p>
+              <p><%= @product.description.gsub(/\n/, '<br/>').html_safe %></p>
               <h4 class="product_price">PRICE: $<%= @product.price %></h4>
               <% if logged_in? %>
               <p><%= @product.views %> views </p>
