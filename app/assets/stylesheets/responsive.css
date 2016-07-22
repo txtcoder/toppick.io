@@ -505,22 +505,27 @@
     }
 
 
+    .single-item .product_content ul{
+        margin: 0;
+        height: 100px;
+    }
+
     .single-item .product_content .buy_btn {
-        height: 40px;
+        height: 35px;
         width: auto;
         border: 1px solid grey;
     }
 
 
     .single-item .product_content .buy_text{
-        height: 40px;
-        width: 130px;
+        height: 25px;
+        width: 200px;
         border: 2px solid #404041;
         margin-left: -5px;
         background-color: #f9e62e;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        padding-top: 6px;
+        padding-top: 5px;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 0;
@@ -533,7 +538,12 @@
         font-weight: 700;
         margin: 0;
 
-    } 
+    }
+
+    .single-item h4{
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
@@ -1158,14 +1168,20 @@
         padding-right: 10px;
         padding-left: 10px;
     }
-    .buy_btn {
+
+    .single-item .product_content ul{
+        margin: 0;
+        height: 70px;
+    }
+
+    .single-item .product_content .buy_btn {
         height: 25px;
         width: auto;
         border: 1px solid grey;
     }
 
 
-    .buy_text{
+    .single-item .product_content .buy_text{
         height: 25px;
         width: auto;
         border: 2px solid #404041;
@@ -1179,7 +1195,7 @@
         padding-bottom: 0;
     }
 
-    .buy_text p{
+    .single-item .product_content .buy_text p{
         font-size: 10px;
         color: #404041;
         font-family: 'Orbitron', arial, sans-serif;
@@ -1187,10 +1203,11 @@
         margin: 0;
 
     }
-    .single-item .product_content ul{
-        margin: 0;
-        height: 70px;
+
+    .single-item h4{
+        font-size: 15px;
     }
+
     #itemsingle{
         padding-bottom: 100px;
     }
@@ -1209,11 +1226,11 @@
     }
 
     #about_us ul li p{
-    font-family: 'Lato', sans-serif;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 
 
 }
