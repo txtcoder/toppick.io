@@ -461,6 +461,7 @@
 		min-width: 1200px;
 	}
 
+
 	.page-content .page_content_xl p{
 		font-size: 23px;
 		max-width: 700px;
@@ -504,44 +505,40 @@
     	font-size: 20px;
     }
 
-
-    .single-item .product_content ul{
-        margin: 0;
-        height: 100px;
-    }
-
-    .single-item .product_content .buy_btn {
-        height: 35px;
+    .single-item .buy_btn {
+        height: 30px;
         width: auto;
         border: 1px solid grey;
     }
 
-
-    .single-item .product_content .buy_text{
-        height: 25px;
-        width: 200px;
+    .single-item .buy_text {
+        height: 30px;
+        width: 130px;
         border: 2px solid #404041;
         margin-left: -5px;
         background-color: #f9e62e;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        padding-top: 5px;
+        padding-top: 3px;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 0;
+
     }
 
-    .single-item .product_content .buy_text p{
+    .single-item .buy_text p{
         font-size: 15px;
-        color: #404041;
-        font-family: 'Orbitron', arial, sans-serif;
-        font-weight: 700;
-        margin: 0;
-
-    }
+    }  
 
     .single-item h4{
-        font-size: 20px;
+        width: 150px;
+        font-size: 15px;
+    }  
+
+    .single-item .product_content ul{
+        margin: 0;
+        height: 50px;
+
     }
 
 }
@@ -674,7 +671,7 @@
     }
 
     .single-item h4{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 38px;
         font-weight: 600;
         color: 404041;
@@ -848,7 +845,7 @@
     }
 
     .single-item h4{
-        font-size: 13px;
+        font-size: 12px;
         line-height: 38px;
         font-weight: 600;
         color: 404041;
