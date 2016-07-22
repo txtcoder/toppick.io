@@ -601,6 +601,16 @@
         width: 500px;
         height: auto;   
     }
+
+    .single-item h4{
+        font-size: 15px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 150px;
+        margin: 0;
+    }
     
 }
 
@@ -735,6 +745,16 @@
         width: 140px;
         padding-right: 10px;
         padding-left: 10px;
+    }
+
+    .single-item h4{
+        font-size: 13px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 130px;
+        margin: 0;
     }
 }
 
