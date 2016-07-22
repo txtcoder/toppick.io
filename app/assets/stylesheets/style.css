@@ -208,11 +208,36 @@ a:hover{
     border-color: #4e6d8d;
 }
 
-.buy_btn{
-	height: 35px;
+.buy_btn {
+	height: 25px;
 	width: auto;
 	border: 1px solid grey;
 }
+
+
+.buy_text{
+	height: 25px;
+	width: auto;
+	border: 2px solid #404041;
+	margin-left: -5px;
+	background-color: #f9e62e;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0;
+}
+
+.buy_text p{
+	font-size: 10px;
+	color: #404041;
+	font-family: 'Orbitron', arial, sans-serif;
+	font-weight: 700;
+	margin: 0;
+
+}
+
 
 input,
 button,
@@ -1315,7 +1340,6 @@ ul.share-buttons img{
 
 }
 
-
 /* 
 	==================
 	[10. ITEM SINGLE]
@@ -1426,19 +1450,16 @@ ul.share-buttons img{
 }
 
 .single-item h4{
-	font-size: 18px;
+	font-size: 13px;
 	line-height: 38px;
 	font-weight: 600;
 	color: 404041;
 	font-family: 'Orbitron', arial, sans-serif;
-	background: url(//image.toppicks.tech/img/highlight_price.png)no-repeat center center;
-	-o-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-webkit-background-size: cover !important;
-	-ms-background-size: cover !important;
-	background-size: cover !important;
-	width: 200px;
+	width: 130px;
+}
 
+.single-item .product_content ul li a ul li {
+	padding: 0;
 }
 
 .single-item  .nav-tabs {
