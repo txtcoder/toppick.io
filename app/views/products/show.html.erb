@@ -61,7 +61,14 @@
               <!-- start: product price and btn section -->
               <ul class="list-inline">
                 <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
-                <li><img src="//image.toppicks.tech/img/buy_amazon.jpg" class="buy_btn"></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_amazon.jpg" class="buy_btn"></li>
+                      <li><p class="buy_text">BUY NOW</p></li>
+                    </ul>
+                  </a>
+                </li>
               </ul>
               <!-- end: product price and btn section -->
               <% if logged_in? %>

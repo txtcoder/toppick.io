@@ -208,6 +208,12 @@ a:hover{
     border-color: #4e6d8d;
 }
 
+.buy_btn{
+	height: 35px;
+	width: auto;
+	border: 1px solid grey;
+}
+
 input,
 button,
 select,
