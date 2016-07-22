@@ -347,6 +347,8 @@
 	}
 
 
+
+
 	#footer h3{
 		text-transform: uppercase;
 		font-size: 26px;
@@ -469,6 +471,15 @@
 		margin-left: 0;
 	}
 
+    .single-item h4{
+        font-size: 20px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 400px;
+        margin: 0;
+    }   
 
 	.single-item  .nav-tabs > li > a {
       color: #aaa;
