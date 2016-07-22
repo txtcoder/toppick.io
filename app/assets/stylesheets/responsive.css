@@ -503,6 +503,37 @@
     .single-item .tab-content{
     	font-size: 20px;
     }
+
+
+    .single-item .product_content .buy_btn {
+        height: 40px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .single-item .product_content .buy_text{
+        height: 40px;
+        width: 130px;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .single-item .product_content .buy_text p{
+        font-size: 15px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    } 
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
@@ -600,6 +631,36 @@
 	#about_us #map{
         width: 500px;
         height: auto;   
+    }
+
+    .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
     }
 
     .single-item h4{
@@ -745,6 +806,35 @@
         width: 140px;
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
     }
 
     .single-item h4{
@@ -1068,7 +1158,35 @@
         padding-right: 10px;
         padding-left: 10px;
     }
+    .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
 
+
+    .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
     .single-item .product_content ul{
         margin: 0;
         height: 70px;
@@ -1258,6 +1376,41 @@
         margin: 0;
         height: 70px;
     }
+
+    .single-item .product_content .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .single-item .product_content .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .single-item .product_content .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    .single-item h4{
+        font-size: 15px;
+    }
+
     #itemsingle{
     padding-bottom: 70px;
     }

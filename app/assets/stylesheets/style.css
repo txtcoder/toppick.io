@@ -209,15 +209,12 @@ a:hover{
 }
 
 .buy_btn {
-	height: 25px;
 	width: auto;
 	border: 1px solid grey;
 }
 
 
 .buy_text{
-	height: 25px;
-	width: auto;
 	border: 2px solid #404041;
 	margin-left: -5px;
 	background-color: #f9e62e;
@@ -230,7 +227,6 @@ a:hover{
 }
 
 .buy_text p{
-	font-size: 10px;
 	color: #404041;
 	font-family: 'Orbitron', arial, sans-serif;
 	font-weight: 700;
