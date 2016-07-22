@@ -70,6 +70,31 @@
                   </a>
                 </li>
               </ul>
+
+              <ul class="list-inline">
+                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_ebay.jpg" class="buy_btn"></li>
+                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="list-inline">
+                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_bestbuy.jpg" class="buy_btn"></li>
+                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+
               <!-- end: product price and btn section -->
               <% if logged_in? %>
               <p><%= @product.views %> views </p>

@@ -1457,6 +1457,10 @@ ul.share-buttons img{
 	font-family: 'Orbitron', arial, sans-serif;
 	width: 130px;
 }
+.single-item .product_content ul{
+	margin: 0;
+	height: 40px;
+}
 
 .single-item .product_content ul li a ul li {
 	padding: 0;
