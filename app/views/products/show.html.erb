@@ -57,7 +57,11 @@
             <div class="col-xl-4 col-md-7 col-sm-7 col-xs-7 page_content_xs page_content_xl">
               <h3><%= @product.name %></h3>
               <p><%= @product.description%></p>
+
+              <!-- start: product price and btn section -->
               <h4 class="product_price">PRICE: $<%= @product.price %></h4>
+
+              <!-- end: product price and btn section -->
               <% if logged_in? %>
               <p><%= @product.views %> views </p>
               <p><%= @product.click %> clicks </p>
@@ -66,7 +70,7 @@
 <%= link_to  product_path(@product, :external =>"true"), :class => "btn btn-order btn-large"  do %>
 <i class="icon-shopping-cart"></i>View at <%= if @product.domain.include? "kckb.st" then "kickstarter.com"; else @product.domain end %><% end %>
             
-    </p>
+    </p>      <!-
             </div>
           </div>
 
