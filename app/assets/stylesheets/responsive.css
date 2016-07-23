@@ -347,6 +347,8 @@
 	}
 
 
+
+
 	#footer h3{
 		text-transform: uppercase;
 		font-size: 26px;
@@ -459,6 +461,7 @@
 		min-width: 1200px;
 	}
 
+
 	.page-content .page_content_xl p{
 		font-size: 23px;
 		max-width: 700px;
@@ -469,6 +472,15 @@
 		margin-left: 0;
 	}
 
+    .single-item h4{
+        font-size: 20px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 400px;
+        margin: 0;
+    }   
 
 	.single-item  .nav-tabs > li > a {
       color: #aaa;
@@ -492,6 +504,43 @@
     .single-item .tab-content{
     	font-size: 20px;
     }
+
+    .single-item .buy_btn {
+        height: 30px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+    .single-item .buy_text {
+        height: 30px;
+        width: 130px;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+
+    }
+
+    .single-item .buy_text p{
+        font-size: 15px;
+    }  
+
+    .single-item h4{
+        width: 150px;
+        font-size: 15px;
+    }  
+
+    .single-item .product_content ul{
+        margin: 0;
+        height: 50px;
+
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
@@ -589,6 +638,46 @@
 	#about_us #map{
         width: 500px;
         height: auto;   
+    }
+
+    .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    .single-item h4{
+        font-size: 13px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 150px;
+        margin: 0;
     }
     
 }
@@ -724,6 +813,45 @@
         width: 140px;
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    .single-item h4{
+        font-size: 12px;
+        line-height: 38px;
+        font-weight: 600;
+        color: 404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        width: 130px;
+        margin: 0;
     }
 }
 
@@ -1038,6 +1166,45 @@
         padding-left: 10px;
     }
 
+    .single-item .product_content ul{
+        margin: 0;
+        height: 70px;
+    }
+
+    .single-item .product_content .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .single-item .product_content .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .single-item .product_content .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    .single-item h4{
+        font-size: 15px;
+    }
+
     #itemsingle{
         padding-bottom: 100px;
     }
@@ -1056,11 +1223,11 @@
     }
 
     #about_us ul li p{
-    font-family: 'Lato', sans-serif;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 
 
 }
@@ -1219,6 +1386,44 @@
     [PRODUCT DETAIL CONTENT ]
     ==================
 */
+    .single-item .product_content ul{
+        margin: 0;
+        height: 70px;
+    }
+
+    .single-item .product_content .buy_btn {
+        height: 25px;
+        width: auto;
+        border: 1px solid grey;
+    }
+
+
+    .single-item .product_content .buy_text{
+        height: 25px;
+        width: auto;
+        border: 2px solid #404041;
+        margin-left: -5px;
+        background-color: #f9e62e;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .single-item .product_content .buy_text p{
+        font-size: 10px;
+        color: #404041;
+        font-family: 'Orbitron', arial, sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    .single-item h4{
+        font-size: 15px;
+    }
 
     #itemsingle{
     padding-bottom: 70px;

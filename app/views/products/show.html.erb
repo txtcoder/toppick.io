@@ -54,19 +54,53 @@
               
               </div>
             </div>
-            <div class="col-xl-4 col-md-7 col-sm-7 col-xs-7 page_content_xs page_content_xl">
+            <div class="col-xl-4 col-md-7 col-sm-7 col-xs-7 page_content_xs page_content_xl product_content">
               <h3><%= @product.name %></h3>
               <p><%= @product.description.gsub(/\n/, '<br/>').html_safe %></p>
-              <h4 class="product_price">PRICE: $<%= @product.price %></h4>
+
+              <!-- start: product price and btn section -->
+              <ul class="list-inline">
+                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_amazon.jpg" class="buy_btn"></li>
+                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="list-inline">
+                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_ebay.jpg" class="buy_btn"></li>
+                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="list-inline">
+                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
+                <li>
+                  <a href="#">
+                    <ul class="list-inline">
+                      <li><img src="//image.toppicks.tech/img/buy_bestbuy.jpg" class="buy_btn"></li>
+                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- end: product price and btn section -->
               <% if logged_in? %>
               <p><%= @product.views %> views </p>
               <p><%= @product.click %> clicks </p>
               <% end %>
-              <p>
-<%= link_to  product_path(@product, :external =>"true"), :class => "btn btn-order btn-large"  do %>
-<i class="icon-shopping-cart"></i>View at <%= if @product.domain.include? "kckb.st" then "kickstarter.com"; else @product.domain end %><% end %>
-            
-    </p>
+              
             </div>
           </div>
 
