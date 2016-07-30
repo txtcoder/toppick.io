@@ -20,6 +20,8 @@ class Product
   field :d_to_c, type:Float
   field :d_to_v, type:Float
 
+  has_many :links
+
   validates :name, presence: true
   validates :description, presence: true
   validates :url, presence: true, :url => true

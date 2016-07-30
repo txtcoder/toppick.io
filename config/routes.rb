@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   #resources :admins
   #================================================================#
     root 'products#index'
-    resources :products
+    resources :products do
+        resources :links
+    end
     get 'products/:id/copy' => 'products#copy', as: :copy_product
     resources :affiliates
   # The priority is based upon order of creation: first created -> highest priority.

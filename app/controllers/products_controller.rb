@@ -87,6 +87,7 @@ class ProductsController < ApplicationController
         redirect_to url
     end
     id = @product.id.to_s
+    @links=@product.links
     ProductsController.delay.update_views(id)
   end
 
