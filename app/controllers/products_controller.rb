@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
         set_country(params[:country])
     end
     if logged_in?
-        @products=Product.unscoped
+        @products=Product.unscoped.sort_by_new
     elsif params[:sort] && params[:sort]=="new"
         @products = Product.sort_by_new
     elsif params[:sort] && params[:sort]=="views"
@@ -184,7 +184,7 @@ class ProductsController < ApplicationController
 
     def filter_by_country
         if logged_in?
-            #do nothing
+            #do not filter
         elsif get_country  == "Canada"
             @products=@products.Canada
         else
@@ -192,7 +192,9 @@ class ProductsController < ApplicationController
         end
     end
     def set_link_country
-        if get_country == "Canada"
+        if logged_in?
+           #do not filter
+        elsif get_country == "Canada"
             @links=@links.Canada
         else
             @links=@links.USA
