@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
-  before_action :set_link, only: [:show, :edit, :update, :destroy]
   before_action :set_product, only: [:show, :new, :edit, :create, :update, :destroy, :index]
   before_action :check_admin, only: [:edit, :new, :create, :update, :destroy]
+  before_action :set_link, only: [:show, :edit, :update, :destroy]
   # GET /links
   # GET /links.json
   def index
@@ -89,7 +89,7 @@ class LinksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_link
-      @link = Link.find(params[:id])
+      @link = @product.links.find(params[:id])
     end
 
     def set_product
