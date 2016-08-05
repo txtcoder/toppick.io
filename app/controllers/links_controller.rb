@@ -11,6 +11,30 @@ class LinksController < ApplicationController
   # GET /links/1
   # GET /links/1.json
   def show
+    url = @link.url
+    res = Affiliate.find_by( domain: @link.domain, source: get_referral)
+    unless res
+        res = Affiliate.find_by( domain: @link.domain, source: "original")
+    end
+     if res
+        referral = res.referral
+        tag=referral.split("=")[0]
+        content=referral.split("=")[1]
+
+        if url.include? tag+"="
+            url.gsub(/(#{tag}=).*/, referral)
+
+        elsif url.include? "?" and url[-1]!="/"
+            url = url+"&"+referral
+        elsif url.include? "?"
+            url= url[0..-1]+"&"+referral
+        elsif url[-1]!="/"
+            url=url+"/?"+referral
+        else
+            url=url+"?"+referral
+        end
+    end
+    redirect_to url
   end
 
   # GET /links/new
@@ -57,7 +81,7 @@ class LinksController < ApplicationController
   def destroy
     @link.destroy
     respond_to do |format|
-      format.html { redirect_to links_url, notice: 'Link was successfully destroyed.' }
+      format.html { redirect_to @product, notice: 'Link was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
