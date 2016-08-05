@@ -3,11 +3,14 @@ class Link
   field :url, type: String
   field :domain, type: String
   field :country, type: String
-  field :price, type: String
+  field :price, type: Float
   field :product_id, type:Integer
-  belongs_to :product
+  embedded_in :product
 
   before_validation :strip_url_parameters
+
+  scope :USA, -> {where(country: "USA")}
+  scope :Canada, -> {where(country: "Canada")}
 
   validates :url, presence: true, :url => true
   validates :domain, presence: true

@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/maintenance'
+
+  get 'static_pages/contact'
+
+  get 'static_pages/about'
+
   resources :feedbacks
   get 'login' =>'sessions#new'
   post 'login' => 'sessions#create'

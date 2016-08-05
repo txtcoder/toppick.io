@@ -32,10 +32,15 @@ class ProductsController < ApplicationController
   end
 
   def index
+    unless logged_in?
+        redirect_to static_pages_maintenance_path
+    end
     if params[:country]
         set_country(params[:country])
     end
-    if params[:sort] && params[:sort]=="new"
+    if logged_in?
+        @products=Product.unscoped
+    elsif params[:sort] && params[:sort]=="new"
         @products = Product.sort_by_new
     elsif params[:sort] && params[:sort]=="views"
         @products = Product.most_viewed
@@ -88,6 +93,7 @@ class ProductsController < ApplicationController
     end
     id = @product.id.to_s
     @links=@product.links
+    set_link_country
     ProductsController.delay.update_views(id)
   end
 
@@ -157,12 +163,12 @@ class ProductsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
-      @product = Product.find(params[:id])
+      @product = Product.unscoped.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :one_liner, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick)
+      params.require(:product).permit(:name, :one_liner, :description, :url, :domain, :price, :images, :country, :specs, :editor_pick, :approved)
     end
     
     def set_s3_direct_post
@@ -177,10 +183,19 @@ class ProductsController < ApplicationController
     end
 
     def filter_by_country
-        if get_country  == "Canada"
+        if logged_in?
+            #do nothing
+        elsif get_country  == "Canada"
             @products=@products.Canada
         else
             @products=@products.USA
+        end
+    end
+    def set_link_country
+        if get_country == "Canada"
+            @links=@links.Canada
+        else
+            @links=@links.USA
         end
     end
 end

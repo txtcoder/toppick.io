@@ -93,7 +93,7 @@ class LinksController < ApplicationController
     end
 
     def set_product
-      @product = Product.find(params[:product_id])
+      @product = Product.unscoped.find(params[:product_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

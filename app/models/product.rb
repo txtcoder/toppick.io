@@ -14,13 +14,14 @@ class Product
   field :country, type: String
   field :specs, type: String
   field :editor_pick, type: Boolean, default: false
+  field :approved, type: Boolean, default: false
   field :display, type: Integer, default: 0
   field :views, type: Integer, default: 0
   field :click, type: Integer, default: 0
   field :d_to_c, type:Float
   field :d_to_v, type:Float
 
-  has_many :links
+  embeds_many :links
 
   validates :name, presence: true
   validates :description, presence: true
@@ -30,13 +31,13 @@ class Product
   validates :country, presence: true, inclusion: { in: %w(USA Canada Test), message: "%{value} is not a supported country" }
 
   scope :test, -> {where(country: "Test")}
-  scope :USA, -> {where(country: "USA")}
-  scope :Canada, ->{where(country: "Canada")}
+  scope :USA, -> { where('links.country' => 'USA')}
+  scope :Canada, ->{where('links.country'=> 'Canada')}
   scope :sort_by_new, -> {order_by(:created_at => :desc)}
   scope :hot, ->{order_by(:d_to_v => :desc)}
   scope :most_viewed, -> {order_by(:views => :desc)}
   scope :editor_pick, ->{where(editor_pick: true)}
-
+  default_scope -> {where(active: true)}
 
   def update_affiliate_link
     domain= URI.parse(url).host
