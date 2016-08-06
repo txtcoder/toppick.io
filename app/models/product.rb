@@ -37,7 +37,7 @@ class Product
   scope :hot, ->{order_by(:d_to_v => :desc)}
   scope :most_viewed, -> {order_by(:views => :desc)}
   scope :editor_pick, ->{where(editor_pick: true)}
-  default_scope -> {where(active: true)}
+  default_scope -> {where(approved: true)}
 
   def update_affiliate_link
     domain= URI.parse(url).host

@@ -32,9 +32,6 @@ class ProductsController < ApplicationController
   end
 
   def index
-    unless logged_in?
-        redirect_to static_pages_maintenance_path
-    end
     if params[:country]
         set_country(params[:country])
     end
@@ -63,6 +60,9 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    if params[:country]
+        set_country(params[:country])
+    end
     if params[:external]
         id=@product.id.to_s
         ProductsController.delay.update_click(id)

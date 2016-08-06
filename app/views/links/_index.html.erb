@@ -4,12 +4,9 @@
     <% if @links %>
     <% @links.each do |link| %>
       <ul class="list-inline">
-        <li><h4 class="product_price">PRICE: $<%= link.price %></h4></li>
                 <li>
-                  <%= link_to product_link_path(@product,link) do %>
-                    <ul class="list-inline">
-                      <li><div class="buy_text"><p>view on <%= link.domain %></p></div></li>
-                    </ul>
+                  <%= link_to product_link_path(@product,link), :class => "btn btn-order btn-large" do %>
+                      <i class="icon-shopping-cart"></i> $<%= format_price(link.price) %> on <%= link.domain %>
                   <% end %>
                 </li>
         </ul>
