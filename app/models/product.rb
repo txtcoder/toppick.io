@@ -63,5 +63,31 @@ class Product
   def update_ratio
      self.d_to_c = self.click/(self.display+1.0)
      self.d_to_v = self.views/(self.display+1.0)
+  end 
+
+  def get_price_range(country)
+    if country=="Canada"
+        links=self.links.Canada
+    else
+        links=self.links.USA
+    end
+    
+    if links.empty?
+        return "$?"
+    end
+    lowest = links[0].price
+    highest= links[0].price
+    links.each do |x|
+        if x.price < lowest
+            lowest = x.price
+        elsif x.price > highest
+            highest = x.price
+        end
+    end
+    if lowest=highest 
+        return "$"+ '%.2f' %  lowest
+    else
+        return "$"+ '%.2f' % lowest+" - $"+ '%.2f' % highest
+    end
   end
 end

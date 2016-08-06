@@ -35,7 +35,7 @@
               <ul>
                 <li><h3><%= product.name %></h3></li>
                 <li><p class="module line-clamp product_description" <%= if product.approved then " "; else 'style=color:#7f0000' end %>><%= if product.one_liner then product.one_liner; else product.description end %></p></li>
-                <!-- TODO: add back price<li><p class="product_price">PRICE: $<= Link.get_prices(product) %></p></li>-->
+                <li><p class="product_price">PRICE: <%= product.get_price_range(get_country) %></p></li>
               </ul>
               </div>
 
