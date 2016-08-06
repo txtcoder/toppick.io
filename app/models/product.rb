@@ -66,7 +66,7 @@ class Product
   end
   def get_previous(country)
      if country=="Canada"
-        Product.Canada.sort_by_new.where(:created_at.lt => self.created_at).last
+        Product.Canada.sort_by_new.where(:created_at.lt => self.created_at).first
      else
         Product.USA.sort_by_new.where(:created_at.lt => self.created_at).first
     end
@@ -74,7 +74,7 @@ class Product
 
   def get_next(country)
     if country=="Canada"
-        Product.Canada.sort_by_new.where(:created_at.gt => self.created_at).first
+        Product.Canada.sort_by_new.where(:created_at.gt => self.created_at).last
     else
         Product.USA.sort_by_new.where(:created_at.gt => self.created_at).last
     end
