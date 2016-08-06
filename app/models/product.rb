@@ -63,7 +63,22 @@ class Product
   def update_ratio
      self.d_to_c = self.click/(self.display+1.0)
      self.d_to_v = self.views/(self.display+1.0)
-  end 
+  end
+  def get_previous(country)
+     if country=="Canada"
+        Product.Canada.sort_by_new.where(:created_at.lt => self.created_at).last
+     else
+        Product.USA.sort_by_new.where(:created_at.lt => self.created_at).first
+    end
+  end
+
+  def get_next(country)
+    if country=="Canada"
+        Product.Canada.sort_by_new.where(:created_at.gt => self.created_at).first
+    else
+        Product.USA.sort_by_new.where(:created_at.gt => self.created_at).last
+    end
+  end
 
   def get_price_range(country)
     if country=="Canada"

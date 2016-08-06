@@ -1576,7 +1576,22 @@ ul.share-buttons img{
 	font-weight: 600;
 }
 
-
+.previous-item {
+ height: 500px;
+ width: 70px;
+}
+.previous-item-image {
+  max-height:100px;
+  max-width:100px;
+}
+.next-item {
+  height: 500px;
+  width:70px;
+}
+.next-item-image {
+  max-height:100px;
+  max-width:100px;
+}
 /* 
 	==================
 	[11. FOOTER]

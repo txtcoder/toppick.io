@@ -17,6 +17,7 @@
   <!-- begin:content -->
   <div class="page-content">
     <div class="page_container_xl container">
+
       <div class="row">
         <div class="col-md-12">
           <ol class="breadcrumb">
@@ -34,8 +35,22 @@
   <li><a href="http://www.reddit.com/submit?url=<%= URI.encode(request.original_url) %>&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
 </ul>
         <!-- end share tag -->
-      <div class="row">
-      <a name="about"></a>
+
+      <% previous =  @product.get_previous(get_country) %>
+      <% pnext = @product.get_next(get_country) %>
+
+      <% previous =  @product.get_previous(get_country) %>
+      <% pnext = @product.get_next(get_country) %>
+      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1">
+        <% if pnext %>
+            <%= link_to pnext do %>
+                    <%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %>
+                    <p> <%= pnext.one_liner %></p>
+            <% end %>
+        <% end %>
+      </div>
+
+
         <!-- begin:product-content -->
         <div class="col-xl-offset-2 col-xl-8 col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12 single-item">
           <div class="row">
@@ -97,7 +112,7 @@
                     </ul>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
 
               <!-- end: product price and btn section -->
               <% if logged_in? %>
@@ -111,7 +126,6 @@
               
             </div>
           </div>
-
 
           <!-- begin:tab -->
           <div class="row hidden">
@@ -191,6 +205,16 @@
           <!-- end:tab -->
         </div>
         <!-- end:product-content -->
+
+
+      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1">
+        <% if previous %>
+            <%= link_to previous do %>
+                    <%= image_tag(to_cdn(previous.images),:class => "previous-item-image") %>
+             <p> <%= previous.one_liner %> </p>
+            <% end %>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>
