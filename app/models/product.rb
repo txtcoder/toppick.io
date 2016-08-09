@@ -22,6 +22,7 @@ class Product
   field :d_to_v, type:Float
 
   embeds_many :links
+  embeds_many :images
 
   validates :name, presence: true
   validates :description, presence: true

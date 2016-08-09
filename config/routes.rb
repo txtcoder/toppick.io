@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   resources :images
-  get 'static_pages/maintenance'
+  get 'maintenance' => 'static_pages#maintenance'
 
-  get 'static_pages/contact'
+  get 'contact' => 'static_pages#contact'
 
-  get 'static_pages/about'
+  get 'about' => 'static_pages#about'
+
+  get 'privacy' => 'static_pages#privacy'
+  
 
   resources :feedbacks
   get 'login' =>'sessions#new'
@@ -18,6 +21,7 @@ Rails.application.routes.draw do
     root 'products#index'
     resources :products do
         resources :links
+        resources :images
     end
     get 'products/:id/copy' => 'products#copy', as: :copy_product
     resources :affiliates
