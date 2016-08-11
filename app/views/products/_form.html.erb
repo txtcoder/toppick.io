@@ -23,27 +23,11 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%= f.text_area :description, size: "30x10" %>
   </div>
   <div class="field">
     <%= f.label :images %><br>
     <%= f.file_field :images %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :country %><br>
-    <%= f.select :country, [['USA','USA'],['Canada','Canada'],['Test','Test']] %>
-  </div> 
-  <div class="field">
-    <%= f.label :specs %><br>
-    <%= f.text_area :specs  %>
   </div>
   <div class="field">
     <%=f.label :editor_pick %><br>

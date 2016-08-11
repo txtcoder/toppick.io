@@ -76,48 +76,8 @@
               <p><%= @product.description.gsub(/\n/, '<br/>').html_safe %></p>
 
               <%= render :partial => 'links/index' %>
-              <!-- start: product price and btn section >
-              <ul class="list-inline">
-                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
-                <li>
-                  <a href="#">
-                    <ul class="list-inline">
-                      <li><img src="//image.toppicks.tech/img/buy_amazon.jpg" class="buy_btn"></li>
-                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
-                    </ul>
-                  </a>
-                </li>
-              </ul>
 
-              <ul class="list-inline">
-                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
-                <li>
-                  <a href="#">
-                    <ul class="list-inline">
-                      <li><img src="//image.toppicks.tech/img/buy_ebay.jpg" class="buy_btn"></li>
-                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
-                    </ul>
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="list-inline">
-                <li><h4 class="product_price">PRICE: $<%= @product.price %></h4></li>
-                <li>
-                  <a href="#">
-                    <ul class="list-inline">
-                      <li><img src="//image.toppicks.tech/img/buy_bestbuy.jpg" class="buy_btn"></li>
-                      <li><div class="buy_text"><p>BUY NOW</p></div></li>
-                    </ul>
-                  </a>
-                </li>
-              </ul> -->
-
-              <!-- end: product price and btn section -->
               <% if logged_in? %>
-
-              <%= link_to  product_path(@product, :external =>"true"), :class => "btn btn-order btn-large"  do %>
-<i class="icon-shopping-cart"></i>View at <%= if @product.domain.include? "kckb.st" then "kickstarter.com"; else @product.domain end %><% end %>
             
               <p><%= @product.views %> views </p>
               <p><%= @product.click %> clicks </p>
