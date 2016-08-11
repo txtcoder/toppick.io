@@ -63,37 +63,10 @@ class ProductsController < ApplicationController
     if params[:country]
         set_country(params[:country])
     end
-    if params[:external]
-        id=@product.id.to_s
-        ProductsController.delay.update_click(id)
-        url = @product.url
-        res = Affiliate.find_by( domain: @product.domain, source: get_referral)
-        unless res
-            res = Affiliate.find_by( domain: @product.domain, source: "original")
-        end
-         if res
-            referral = res.referral
-            tag=referral.split("=")[0]
-            content=referral.split("=")[1]
-            
-            if url.include? tag+"="
-                url.gsub(/(#{tag}=).*/, referral)
-                
-            elsif url.include? "?" and url[-1]!="/"
-                url = url+"&"+referral
-            elsif url.include? "?"
-                url= url[0..-1]+"&"+referral
-            elsif url[-1]!="/"
-                url=url+"/?"+referral
-            else
-                url=url+"?"+referral
-            end
-        end
-        redirect_to url
-    end
     id = @product.id.to_s
     @links=@product.links
     set_link_country
+    apply_referral(@links)
     ProductsController.delay.update_views(id)
   end
 

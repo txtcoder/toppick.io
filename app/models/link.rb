@@ -24,4 +24,7 @@ class Link
     #maybe remove this line for ebay?
     self.url=url.gsub(/\?.*/, "")
   end
+
+  def append_affiliate
+  end
 end

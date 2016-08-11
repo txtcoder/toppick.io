@@ -5,7 +5,7 @@
     <% @links.each do |link| %>
       <ul class="list-inline">
                 <li>
-                  <%= link_to product_link_path(@product,link), :class => "btn btn-order btn-large" do %>
+                  <%= link_to link.url, :class => "btn btn-order btn-large" do %>
                       <i class="icon-shopping-cart"></i> $<%= format_price(link.price) %> on <%= if link.domain.include? "kckb.st" then "kickstarter.com"; else link.domain end %>
                   <% end %>
                 </li>
