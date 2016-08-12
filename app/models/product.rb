@@ -68,7 +68,7 @@ class Product
             highest = x.price
         end
     end
-    if lowest=highest 
+    if lowest==highest 
         return "$"+ '%.2f' %  lowest
     else
         return "$"+ '%.2f' % lowest+" - $"+ '%.2f' % highest
