@@ -1,10 +1,12 @@
 class ImagesController < ApplicationController
+  before_action :set_product, only: [:show, :new, :edit, :create, :update, :destroy, :index]
   before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :check_admin, only: [:edit, :new, :create, :update, :destroy]
   before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
   # GET /images
   # GET /images.json
   def index
-    @images = Image.all
+    @images = @product.medias
   end
 
   # GET /images/1
@@ -25,10 +27,10 @@ class ImagesController < ApplicationController
   # POST /images.json
   def create
     @image = Image.new(image_params)
-
+    @product.medias << @image
     respond_to do |format|
       if @image.save
-        format.html { redirect_to @image, notice: 'Image was successfully created.' }
+        format.html { redirect_to product_images_path(@product), notice: 'Image was successfully created.' }
         format.json { render :show, status: :created, location: @image }
       else
         format.html { render :new }
@@ -56,7 +58,7 @@ class ImagesController < ApplicationController
   def destroy
     @image.destroy
     respond_to do |format|
-      format.html { redirect_to images_url, notice: 'Image was successfully destroyed.' }
+      format.html { redirect_to product_images_path(@product), notice: 'Image was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -75,5 +77,16 @@ class ImagesController < ApplicationController
 
     def set_s3_direct_post
         @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
+    end
+
+    def set_product 
+        @product = Product.unscoped.find(params[:product_id])
+    end
+
+    def check_admin
+        unless logged_in?
+        flash[:danger] = "You shouldn't be here"
+        redirect_to root_path
+        end
     end
 end

@@ -17,6 +17,7 @@ class Product
   field :d_to_v, type:Float
 
   embeds_many :links
+  embeds_many :medias, class_name: "Image"
 
   validates :name, presence: true
   validates :description, presence: true

@@ -60,13 +60,28 @@
                   <div class="item active">
                      <%= image_tag(to_cdn(@product.images)) %>
                   </div>
+                   <% if @product.medias %>
+                        <% @product.medias.each do |img| %>
+                            <div class ="item">
+                                <%=image_tag(to_cdn(img.img)) %>
+                            </div>
+                        <% end %>
+                   <% end %>
                 </div>
                 
                 <ol class="carousel-indicators">
                   <li data-target="#itemsingle" data-slide-to="0" class="active"><%= image_tag(to_cdn(@product.images), :class => "img-responsive") %></li>
+                  <% if @product.medias %>
+                    <% @product.medias.each.with_index do |img, i| %>
+                        <li data-target="#itemsingle" data-slide-to="<%= i+1 %>"><%= image_tag(to_cdn(img.img), :class=> "img-responsive") %></li>
+                    <% end %>
+                  <% end %>
                 </ol>
               
               </div>
+               <% if logged_in? %>
+                 <%= link_to 'Manage media', product_images_path(@product) %>
+               <% end %>
             </div>
             <div class="col-xl-4 col-md-7 col-sm-7 col-xs-7 page_content_xs page_content_xl product_content">
               <%  if logged_in? %>

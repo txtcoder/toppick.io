@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :images
   get 'maintenance' => 'static_pages#maintenance'
 
   get 'contact' => 'static_pages#contact'
