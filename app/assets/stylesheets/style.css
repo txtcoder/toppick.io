@@ -208,6 +208,12 @@ a:hover{
     border-color: #4e6d8d;
 }
 
+/* Next & Previous Btn  START*/
+
+#next-previous-btn ul{
+	list-style-type: none;
+}
+
 #next-previous-btn p{
 	color: #404041;
 	font-family: 'Lato', arial, sans-serif;
@@ -215,12 +221,12 @@ a:hover{
 	text-align: center;
 }
 
-#next-previous-btn{
-		color: #404041;
-		font-family: 'Lato', arial, sans-serif;
-		font-size: 10px;
-		text-align: center;
+#next-previous-btn a{
+		text-decoration: none;
 }
+
+/* Next & Previous Btn END */
+
 
 .buy_btn {
 	width: auto;
