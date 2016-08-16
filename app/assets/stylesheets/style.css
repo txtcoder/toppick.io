@@ -208,6 +208,14 @@ a:hover{
     border-color: #4e6d8d;
 }
 
+#next-previous-btn p{
+	color: #404041;
+	font-family: 'Lato', arial, sans-serif;
+	font-size: 10px;
+	text-align: center;
+
+}
+
 .buy_btn {
 	width: auto;
 	border: 1px solid grey;
