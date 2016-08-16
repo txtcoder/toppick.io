@@ -40,7 +40,7 @@
       <% pnext = @product.get_next(get_country) %>
 
       <div class="row">
-      <div class="hidden col-xl-2 col-lg-2 col-md-1 col-sm-1">
+      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1">
         <% if pnext %>
             <%= link_to pnext do %>
                     <%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %>
@@ -181,7 +181,7 @@
         <!-- end:product-content -->
 
 
-      <div class="hidden col-xl-2 col-lg-2 col-md-1 col-sm-1">
+      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1">
         <% if previous %>
             <%= link_to previous do %>
                     <%= image_tag(to_cdn(previous.images),:class => "previous-item-image") %>
