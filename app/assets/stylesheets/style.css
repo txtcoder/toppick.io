@@ -29,7 +29,7 @@
 	[10. CONTACT FORM]
 	[11. FOOTER]
 	[12. COPYRIGHT]
-
+	[13. NEXT & PREVIOUS BTN]
 */
 
 
@@ -207,28 +207,6 @@ a:hover{
 	background-color: #4e6d8d;
     border-color: #4e6d8d;
 }
-
-/* Next & Previous Btn  START*/
-
-#next-previous-btn ul{
-	list-style-type: none;
-	padding: 0;
-}
-
-#next-previous-btn p{
-	color: #404041;
-	font-family: 'Lato', arial, sans-serif;
-	font-size: 10px;
-	text-align: center;
-}
-#next-previous-btn h3{
-	text-align: center;
-}
-#next-previous-btn a{
-		text-decoration: none;
-}
-
-/* Next & Previous Btn END */
 
 
 .buy_btn {
@@ -1759,4 +1737,31 @@ ul.share-buttons img{
 	text-align: center;
 	color: #ffffff;
 }
+
+/* 
+	==================
+	[13. NEXT & PREVIOUS BTN]
+	==================
+*/
+
+#next-previous-btn ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+#next-previous-btn p{
+	color: #404041;
+	font-family: 'Lato', arial, sans-serif;
+	font-size: 10px;
+	text-align: center;
+}
+#next-previous-btn h3{
+	text-align: center;
+}
+#next-previous-btn a{
+		text-decoration: none;
+}
+
+/* Next & Previous Btn END */
+
 
