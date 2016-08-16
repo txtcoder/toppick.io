@@ -182,10 +182,11 @@
 
 
       <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1" id="next-previous-btn">
+      <ul>
         <% if previous %>
             <%= link_to previous do %>
                     <%= image_tag(to_cdn(previous.images),:class => "previous-item-image") %>
-             <p> <%= pnext.name %> </p>
+             <p> <%= previous.name %> </p>
             <% end %>
         <% end %>
         </div>
