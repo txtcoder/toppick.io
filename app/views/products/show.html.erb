@@ -44,7 +44,7 @@
         <% if pnext %>
             <%= link_to pnext do %>
                     <%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %>
-                    <p> <%= pnext.one_liner %></p>
+                    <p> <%= pnext.name %></p>
             <% end %>
         <% end %>
       </div>
@@ -185,7 +185,7 @@
         <% if previous %>
             <%= link_to previous do %>
                     <%= image_tag(to_cdn(previous.images),:class => "previous-item-image") %>
-             <p> <%= previous.one_liner %> </p>
+             <p> <%= pnext.name %> </p>
             <% end %>
         <% end %>
         </div>
