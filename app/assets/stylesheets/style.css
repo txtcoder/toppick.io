@@ -212,6 +212,7 @@ a:hover{
 
 #next-previous-btn ul{
 	list-style-type: none;
+	padding: 0;
 }
 
 #next-previous-btn p{
@@ -220,7 +221,9 @@ a:hover{
 	font-size: 10px;
 	text-align: center;
 }
-
+#next-previous-btn h3{
+	text-align: center;
+}
 #next-previous-btn a{
 		text-decoration: none;
 }
