@@ -541,6 +541,39 @@
 
     }
 
+    /* Next and Previous Btn */
+
+    #previous-btn {
+        padding-top: 65%;
+    }
+    #previous-btn ul{
+        width: 90px;
+    }
+
+    #previous-btn p{
+        font-size: 14px;
+    }
+
+    #previous-btn h3{
+        font-size: 30px;
+    }
+
+    #next-btn {
+        padding-top: 65%;
+    }
+    #next-btn ul{
+        width: 90px;
+    }
+
+    #next-btn p{
+        font-size: 14px;
+    }
+
+    #next-btn h3{
+        font-size: 30px;
+    }
+    
+
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
@@ -682,21 +715,35 @@
 
     /* Next and Previous Btn */
 
-    #next-previous-btn {
+    #next-btn {
         padding-top: 45%;
     }
-    #next-previous-btn ul{
+    #next-btn ul{
         width: 90px;
     }
 
-    #next-previous-btn p{
+    #next-btn p{
         font-size: 14px;
     }
 
-    #next-previous-btn h3{
+    #next-btn h3{
         font-size: 30px;
     }
     
+    #previous-btn {
+        padding-top: 45%;
+    }
+    #previous-btn ul{
+        width: 90px;
+    }
+
+    #previous-btn p{
+        font-size: 14px;
+    }
+
+    #previous-btn h3{
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:991px) {
@@ -870,6 +917,33 @@
         width: 130px;
         margin: 0;
     }
+
+    /* Next and Previous Btn */
+
+    #previous-btn ul{
+        width: 90px;
+    }
+
+    #previous-btn p{
+        font-size: 14px;
+    }
+
+    #previous-btn h3{
+        font-size: 30px;
+    }
+
+    #next-btn ul{
+        width: 90px;
+    }
+
+    #next-btn p{
+        font-size: 14px;
+    }
+
+    #next-btn h3{
+        font-size: 30px;
+    }
+    
 }
 
 @media (max-width: 979px){
