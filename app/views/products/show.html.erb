@@ -35,26 +35,9 @@
   <li><a href="http://www.reddit.com/submit?url=<%= URI.encode(request.original_url) %>&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="//image.toppicks.tech/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
 </ul>
         <!-- end share tag -->
-
-      <% previous =  @product.get_previous(get_country) %>
-      <% pnext = @product.get_next(get_country) %>
-
       <div class="row">
-      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1" id="next-previous-btn">
-        <% if pnext %>
-            <%= link_to pnext do %>
-            <ul>
-                <li id="next-img"><%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %></li>
-                <li><p> <%= pnext.name %></p></li>
-                <li><h3>&#10094;</h3></li>
-            </ul>
-            <% end %>
-        <% end %>
-      </div>
-
-
         <!-- begin:product-content -->
-        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-xs-12 single-item">
+        <div class="col-xl-offset-2 col-xl-8 col-lg-offset-2 col-lg-8 col-md-10 col-sm-10 col-xs-12 single-item">
           <div class="row">
             <div class="col-xl-6 col-md-5 col-sm-5 col-xs-5 page_content_xs page_img_xl">
               <div id="itemsingle" class="carousel slide clearfix">
@@ -184,8 +167,29 @@
         <!-- end:product-content -->
 
 
+      </div> <!-- end: row -->
+      </div>
+    </div>
+
+    <div class="next_prev_section">
+      <div class="container">
+              <% previous =  @product.get_previous(get_country) %>
+              <% pnext = @product.get_next(get_country) %>
+
+      <div class="row">
       <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1" id="next-previous-btn">
-			<% if previous %>
+        <% if pnext %>
+            <%= link_to pnext do %>
+            <ul>
+                <li id="next-img"><%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %></li>
+                <li><p> <%= pnext.name %></p></li>
+                <li><h3>&#10094;</h3></li>
+            </ul>
+            <% end %>
+        <% end %>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1" id="next-previous-btn">
+      <% if previous %>
             <%= link_to previous do %>
             <ul>
              <li><%= image_tag(to_cdn(previous.images),:class => "previous-item-image") %></li>
@@ -195,9 +199,13 @@
             <% end %>
         <% end %>
       </div>
-      </div> <!-- end: row -->
+      </div>
       </div>
     </div>
+
+
+
+
   </div>
   
   
