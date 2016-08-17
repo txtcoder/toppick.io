@@ -919,7 +919,9 @@
     }
 
     /* Next and Previous Btn */
-
+    #previous-btn {
+        padding-top: 45%;
+    }
     #previous-btn ul{
         width: 90px;
     }
@@ -932,6 +934,9 @@
         font-size: 30px;
     }
 
+    #next-btn {
+        padding-top: 45%;
+    }
     #next-btn ul{
         width: 90px;
     }
