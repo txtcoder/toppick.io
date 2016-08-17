@@ -44,10 +44,10 @@
         <% if pnext %>
             <%= link_to pnext do %>
             <ul>
-                <li><%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %></li>
+                <li id="next-img"><%= image_tag(to_cdn(pnext.images), :class => "next-item-image") %></li>
                 <li><p> <%= pnext.name %></p></li>
                 <li><h3>&#10093;</h3></li>
-             </ul>
+            </ul>
             <% end %>
         <% end %>
       </div>

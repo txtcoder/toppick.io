@@ -1577,22 +1577,7 @@ ul.share-buttons img{
 	font-weight: 600;
 }
 
-.previous-item {
- height: 500px;
- width: 70px;
-}
-.previous-item-image {
-  max-height:100px;
-  max-width:100px;
-}
-.next-item {
-  height: 500px;
-  width:70px;
-}
-.next-item-image {
-  max-height:100px;
-  max-width:100px;
-}
+
 /* 
 	==================
 	[11. FOOTER]
@@ -1744,9 +1729,11 @@ ul.share-buttons img{
 	==================
 */
 
+
 #next-previous-btn ul{
 	list-style-type: none;
 	padding: 0;
+	width: 50px;
 }
 
 #next-previous-btn p{
