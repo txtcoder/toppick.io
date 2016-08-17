@@ -1129,6 +1129,33 @@
         padding-left: 10px;
     }
 
+    /* Next and Previous Btn */
+
+    #previous-btn ul{
+        width: 90px;
+    }
+
+    #previous-btn p{
+        font-size: 14px;
+    }
+
+    #previous-btn h3{
+        font-size: 30px;
+    }
+
+    #next-btn ul{
+        width: 90px;
+    }
+
+    #next-btn p{
+        font-size: 14px;
+    }
+
+    #next-btn h3{
+        font-size: 30px;
+    }
+    
+
 }
 
 @media (min-width: 480px) and (max-width: 767px){
@@ -1310,6 +1337,33 @@
         padding-right: 30px;
         padding-left: 30px;
     }
+
+    /* Next and Previous Btn */
+
+    #previous-btn ul{
+        width: 90px;
+    }
+
+    #previous-btn p{
+        font-size: 14px;
+    }
+
+    #previous-btn h3{
+        font-size: 30px;
+    }
+
+    #next-btn ul{
+        width: 90px;
+    }
+
+    #next-btn p{
+        font-size: 14px;
+    }
+
+    #next-btn h3{
+        font-size: 30px;
+    }
+    
 
 
 }
