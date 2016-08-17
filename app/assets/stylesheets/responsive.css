@@ -682,7 +682,7 @@
 
     /* Next and Previous Btn */
     #next-previous-btn ul{
-        width: 70px;
+        width: 90px;
     }
 
     #next-previous-btn p{
@@ -690,7 +690,7 @@
     }
 
     #next-previous-btn h3{
-        font-size: 15px;
+        font-size: 30px;
     }
     
 }

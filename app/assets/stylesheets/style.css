@@ -1733,7 +1733,7 @@ ul.share-buttons img{
 #next-previous-btn ul{
 	list-style-type: none;
 	padding: 0;
-	width: 70px;
+	margin: 0;
 }
 
 #next-previous-btn .next-item-image {
@@ -1744,7 +1744,6 @@ ul.share-buttons img{
 #next-previous-btn p{
 	color: #404041;
 	font-family: 'Lato', arial, sans-serif;
-	font-size: 10px;
 	text-align: center;
 }
 #next-previous-btn h3{
