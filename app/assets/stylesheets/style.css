@@ -1729,7 +1729,6 @@ ul.share-buttons img{
 	==================
 */
 
-
 #next-previous-btn ul{
 	list-style-type: none;
 	padding: 0;
@@ -1737,6 +1736,11 @@ ul.share-buttons img{
 }
 
 #next-previous-btn .next-item-image {
+  height:auto;
+  width:100%;
+}
+
+#next-previous-btn .previous-item-image {
   height:auto;
   width:100%;
 }

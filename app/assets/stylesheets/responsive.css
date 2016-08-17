@@ -681,6 +681,10 @@
     }
 
     /* Next and Previous Btn */
+
+    #next-previous-btn {
+        padding-top: 20%;
+    }
     #next-previous-btn ul{
         width: 90px;
     }
