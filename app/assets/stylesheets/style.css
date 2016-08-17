@@ -1733,7 +1733,12 @@ ul.share-buttons img{
 #next-previous-btn ul{
 	list-style-type: none;
 	padding: 0;
-	width: 50px;
+	width: 70px;
+}
+
+#next-previous-btn .next-item-image {
+  height:auto;
+  width:100%;
 }
 
 #next-previous-btn p{
