@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   #get 'signup' => 'admins#new'
   #resources :admins
   #================================================================#
-    root 'products#index'
+    root 'static_pages#maintenance'
     resources :products do
         resources :links
         resources :images
