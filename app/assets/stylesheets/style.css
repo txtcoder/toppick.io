@@ -1728,63 +1728,70 @@ ul.share-buttons img{
 	[13. NEXT & PREVIOUS BTN]
 	==================
 */
+.next_previous_btn{
+	padding-bottom: 60px;
+}
 
-#next-btn ul{
+.next_previous_btn #next-btn ul{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
 
-#next-btn .next-item-image {
+.next_previous_btn #next-btn .next-item-image {
   height:auto;
   width:100%;
 }
 
-#next-btn .previous-item-image {
+.next_previous_btn #next-btn .previous-item-image {
   height:auto;
   width:100%;
 }
 
-#next-btn p{
+.next_previous_btn #next-btn ul li p{
 	color: #404041;
 	font-family: 'Lato', arial, sans-serif;
 	text-align: center;
 }
-#next-btn h3{
+.next_previous_btn #next-btn ul li h3{
+	color: #404041;
+	font-family: 'Lato', arial, sans-serif;
 	text-align: center;
 	margin: 0;
 }
-#next-btn a{
+.next_previous_btn #next-btn ul li a{
 		text-decoration: none;
 }
 
 
-#previous-btn ul{
+.next_previous_btn #previous-btn ul{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
 
-#previous-btn .next-item-image {
+.next_previous_btn #previous-btn .next-item-image {
   height:auto;
   width:100%;
 }
 
-#previous-btn .previous-item-image {
+.next_previous_btn #previous-btn .previous-item-image {
   height:auto;
   width:100%;
 }
 
-#previous-btn p{
+.next_previous_btn #previous-btn ul li p{
 	color: #404041;
 	font-family: 'Lato', arial, sans-serif;
 	text-align: center;
 }
-#previous-btn h3{
+.next_previous_btn #previous-btn ul li h3{
 	text-align: center;
 	margin: 0;
+	color: #404041;
+	font-family: 'Lato', arial, sans-serif;
 }
-#previous-btn a{
+.next_previous_btn #previous-btn ul lie a{
 		text-decoration: none;
 }
 
