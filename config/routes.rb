@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   #===uncomment these 2 lines to enable admin user registration ====#  
-  #get 'signup' => 'admins#new'
-  #resources :admins
+  get 'signup' => 'admins#new'
+  resources :admins
   #================================================================#
     root 'static_pages#maintenance'
     resources :products do
