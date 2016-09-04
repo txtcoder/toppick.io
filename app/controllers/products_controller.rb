@@ -60,14 +60,10 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    if params[:country]
-        set_country(params[:country])
-    end
-    id = @product.id.to_s
-    @links=@product.links
-    set_link_country
-    apply_referral(@links)
-    ProductsController.delay.update_views(id)
+    id=@product.id.to_s
+    ProductsController.delay.update_click(id)
+    url = @product.url
+    redirect_to url
   end
 
   # GET /products/new
@@ -100,7 +96,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to products_url, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -114,7 +110,7 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to products_url, notice: 'Product was successfully updated.' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit }

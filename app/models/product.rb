@@ -5,9 +5,8 @@ class Product
 
   field :name, type: String
   field :one_liner, type: String
-  field :description, type: String
   field :images, type: String
-  field :specs, type: String
+  field :url, type: String
   field :editor_pick, type: Boolean, default: false
   field :approved, type: Boolean, default: false
   field :display, type: Integer, default: 0
@@ -20,7 +19,8 @@ class Product
   embeds_many :medias, class_name: "Image"
 
   validates :name, presence: true
-  validates :description, presence: true
+  validates :one_liner, presence: true
+  validates :url, presence: true, :url => true
 
   scope :USA, -> { where('links.country' => 'USA')}
   scope :Canada, ->{where('links.country'=> 'Canada')}
@@ -34,6 +34,7 @@ class Product
      self.d_to_c = self.click/(self.display+1.0)
      self.d_to_v = self.views/(self.display+1.0)
   end
+
   def get_previous(country)
      if country=="Canada"
         Product.Canada.sort_by_new.where(:created_at.lt => self.created_at).first
