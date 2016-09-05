@@ -34,13 +34,12 @@
             <div class="caption-details">
               <ul>
                 <li><h3><%= product.name %></h3></li>
-                <li><p class="module line-clamp product_description" <%= product.one_liner %></p></li>
-                <li><p class="product_price">PRICE: <%= product.get_price_range(get_country) %></p></li>
+                <li><p class="module line-clamp product_description"> <%= product.one_liner %></p></li>
               </ul>
               </div>
 
               <div class="view_details">
-                <%= link_to 'VIEW DETAIL', product, action: "show", class: "price" %>
+                <%= link_to 'CHECK IT OUT', product, action: "show", class: "price" %>
               </div>
               <% if logged_in? %>
                 <%= link_to 'Copy', copy_product_path(product) %>
